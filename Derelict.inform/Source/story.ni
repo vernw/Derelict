@@ -113,26 +113,19 @@ Instead of going down in the Central Lift:
 		now the Commons are mapped aft of the Central Lift;
 		now nothing is mapped aft of the Captain's Quarters;
 		now nothing is mapped port of the Dining Hall;
-		say "The lift churns upwards towards the second floor.";
-	end if;
-	If the Dining Hall is mapped starboard of the Central Lift
-	begin;
-		now the Commons are mapped aft of the Central Lift;
-		now nothing is mapped aft of the Captain's Quarters;
-		now nothing is mapped port of the Dining Hall;
-		say "The lift churns upwards towards the second floor.";
+		say "The lift churns downwards towards the second floor.";
 	end if;
 	If the Commons is mapped aft of the Central Lift
 	begin;
 		now Engineering is mapped aft of the Central Lift;
 		now nothing is mapped fore of the Commons;
-		say "The lift churns upwards towards the third floor.";
+		say "The lift churns downwards towards the third floor.";
 	end if;
 	If Engineering is mapped aft of the Central Lift
 	begin;
 		now the Cargo Bay is mapped aft of the Central Lift;
 		now nothing is mapped fore of Engineering;
-		say "The lift churns upwards towards the bottom floor.";
+		say "The lift churns downwards towards the bottom floor.";
 	end if;
 	If the Cargo Bay is mapped aft of the Central Lift
 	begin;
