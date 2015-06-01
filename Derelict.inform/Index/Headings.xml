@@ -25,28 +25,28 @@
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Source\story.ni</string>
-        <key>Line</key><integer>144</integer>
+        <key>Line</key><integer>155</integer>
         <key>Title</key><string>Chapter 2 - Entities</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Source\story.ni</string>
-        <key>Line</key><integer>146</integer>
+        <key>Line</key><integer>157</integer>
         <key>Title</key><string>Chapter 3 - Objects/Things and Scenery</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Source\story.ni</string>
-        <key>Line</key><integer>148</integer>
+        <key>Line</key><integer>159</integer>
         <key>Title</key><string>Chapter 4 - Scripted Events</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Source\story.ni</string>
-        <key>Line</key><integer>153</integer>
+        <key>Line</key><integer>164</integer>
         <key>Title</key><string>Chapter 5 - Dialogue Trees (Nodes)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>1</integer>

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02BEED88" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x034B8BF0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02BFCD38"/>
-  <item nodeId="node-0x02BEED88">
+  <activeNode nodeId="node-0x034B8BF0"/>
+  <item nodeId="node-0x034B8BF0">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">An abhorrent hissing sound echoes haphazardly throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes, allowing you to catch a glimpse of the frost clinging onto the military-grade glass panel in front of you slowly melt away. A display projected onto the glass in front of you flashes the word "Depressurizing" incessantly until the hissing dissipates.&#x000A;&#x000A;Two heavy clicks are heard, and the panel in front of you begins the process of removing itself to provide you passage from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.&#x000A;&#x000A;As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted "Cryostasis Block D" on the large steel grey wall ahead.&#x000A;&#x000A;Derelict&#x000A;A dark mystery by Vern &amp; Mark&#x000A;Release 1 / Serial number 150601 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Cryostasis Hold&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">An abhorrent hissing sound reverberates haphazardly throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes, allowing you to catch a glimpse of the frost clinging onto the military-grade glass panel in front of you slowly melt away. A display projected onto the glass in front of you flashes the word "Depressurizing" incessantly until the hissing dissipates.&#x000A;&#x000A;Two heavy clicks are heard, and the panel in front of you begins the process of removing itself to provide you passage from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.&#x000A;&#x000A;As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted "Cryostasis Block D" on the large steel grey wall ahead.&#x000A;&#x000A;Derelict&#x000A;A dark mystery by Vern &amp; Mark&#x000A;Release 1 / Serial number 150601 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Cryostasis Hold&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02BEEA80"/>
-      <child nodeId="node-0x02BFC408"/>
+      <child nodeId="node-0x034CEDC0"/>
+      <child nodeId="node-0x034D7308"/>
+      <child nodeId="node-0x034D7E68"/>
+      <child nodeId="node-0x034D7FB8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BEEA80">
+  <item nodeId="node-0x034CEDC0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Which do you mean, the south or starboard?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -22,10 +24,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BEEAF0"/>
+      <child nodeId="node-0x034CE150"/>
     </children>
   </item>
-  <item nodeId="node-0x02BEEAF0">
+  <item nodeId="node-0x034CE150">
     <command xml:space="preserve">south</command>
     <result xml:space="preserve">Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -33,10 +35,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF6F10"/>
+      <child nodeId="node-0x034DFAE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF6F10">
+  <item nodeId="node-0x034DFAE0">
     <command xml:space="preserve">starboard</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -44,10 +46,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF6F80"/>
+      <child nodeId="node-0x034DFB50"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF6F80">
+  <item nodeId="node-0x034DFB50">
     <command xml:space="preserve">port</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -55,10 +57,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF6FF0"/>
+      <child nodeId="node-0x034DFBC0"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF6FF0">
+  <item nodeId="node-0x034DFBC0">
     <command xml:space="preserve">aft</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -66,10 +68,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF74D8"/>
+      <child nodeId="node-0x034DFC30"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF74D8">
+  <item nodeId="node-0x034DFC30">
     <command xml:space="preserve">fore</command>
     <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -77,10 +79,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF7810"/>
+      <child nodeId="node-0x034E2C98"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF7810">
+  <item nodeId="node-0x034E2C98">
     <command xml:space="preserve">f</command>
     <result xml:space="preserve">You push the button to call the elevator.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -88,10 +90,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF7880"/>
+      <child nodeId="node-0x034E2D08"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF7880">
+  <item nodeId="node-0x034E2D08">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -99,10 +101,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF78F0"/>
+      <child nodeId="node-0x034E2D78"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF78F0">
+  <item nodeId="node-0x034E2D78">
     <command xml:space="preserve">aft</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -110,10 +112,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF7960"/>
+      <child nodeId="node-0x034E2DE8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF7960">
+  <item nodeId="node-0x034E2DE8">
     <command xml:space="preserve">aft</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -121,10 +123,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF79D0"/>
+      <child nodeId="node-0x034E2E58"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF79D0">
+  <item nodeId="node-0x034E2E58">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -132,10 +134,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF7A40"/>
+      <child nodeId="node-0x034E2EC8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF7A40">
+  <item nodeId="node-0x034E2EC8">
     <command xml:space="preserve">x room</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -143,10 +145,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BF7D78"/>
+      <child nodeId="node-0x034E2F38"/>
     </children>
   </item>
-  <item nodeId="node-0x02BF7D78">
+  <item nodeId="node-0x034E2F38">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Central Lift&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -154,10 +156,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC168"/>
+      <child nodeId="node-0x034D7298"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC168">
+  <item nodeId="node-0x034D7298">
     <command xml:space="preserve">starboard</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -165,41 +167,44 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BFC408">
+  <item nodeId="node-0x034D7308">
     <command xml:space="preserve">f</command>
-    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC2B8"/>
-      <child nodeId="node-0x02BFC558"/>
+      <child nodeId="node-0x034D7378"/>
+      <child nodeId="node-0x034D7688"/>
+      <child nodeId="node-0x034F1C78"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC2B8">
+  <item nodeId="node-0x034D7378">
     <command xml:space="preserve">a</command>
-    <result xml:space="preserve">Crew Quarters&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Cryostasis Hold&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC328"/>
+      <child nodeId="node-0x034D73E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC328">
+  <item nodeId="node-0x034D73E8">
     <command xml:space="preserve">f</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCC58"/>
+      <child nodeId="node-0x034D7458"/>
+      <child nodeId="node-0x034F12D8"/>
+      <child nodeId="node-0x035743D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCC58">
+  <item nodeId="node-0x034D7458">
     <command xml:space="preserve">aft</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -207,10 +212,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCBE8"/>
+      <child nodeId="node-0x034D74C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCBE8">
+  <item nodeId="node-0x034D74C8">
     <command xml:space="preserve">port</command>
     <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -218,10 +223,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCB78"/>
+      <child nodeId="node-0x034D7538"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCB78">
+  <item nodeId="node-0x034D7538">
     <command xml:space="preserve">port</command>
     <result xml:space="preserve">Passengers' Quarters&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -229,10 +234,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCCC8"/>
+      <child nodeId="node-0x034D75A8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCCC8">
+  <item nodeId="node-0x034D75A8">
     <command xml:space="preserve">sb</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -240,10 +245,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCD38"/>
+      <child nodeId="node-0x034D7618"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCD38">
+  <item nodeId="node-0x034D7618">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -251,7 +256,29 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BFC558">
+  <item nodeId="node-0x034F12D8">
+    <command xml:space="preserve">sb</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1268"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1268">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F11F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F11F8">
     <command xml:space="preserve">f</command>
     <result xml:space="preserve">You push the button to call the elevator.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -259,11 +286,139 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC4E8"/>
-      <child nodeId="node-0x02BFC638"/>
+      <child nodeId="node-0x034F1348"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC4E8">
+  <item nodeId="node-0x034F1348">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">The lift churns upwards towards the first floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F13B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F13B8">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1428"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1428">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">Captain's Quarters&#x000A;The Captain's Quarters is a room of luxury.  Even though the Captain doesn't actually get to spend much time here, it is Federation standard that their quarters are a place they can retreat to for relaxation and decompression.  But not explosive decompression.  That would be bad.&#x000A;&#x000A;Communications is starboard of here, and the Lift shaft is aft.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1498"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1498">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1508"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1508">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1578"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1578">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">Communications&#x000A;The Communications room is fairly self explanatory, but if you really need a detailed description... there are devices here for communicating.  Most of the technology is nothing complicated, RADAR, X-RAY, infrared sensors, as well as an array of ultra long range radios.&#x000A;&#x000A;The Dining Hall is aft of here, the Bridge is fore, and the Captain's Quarters is port.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F15E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F15E8">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">Bridge&#x000A;The bridge is where the ship is commanded and piloted from.  It has a large bay window facing into the abyss of space, though it's usually covered by much more useful projection screens.  It is situated quite like a conference room, with the Captain's chair at the head of an elliptical table facing the window, with the various department heads having their designated seats around the long sides.  An untrained witness of the ship running at full steam could easily mistake it for a board meeting.&#x000A;&#x000A;Communications is aft of here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1658"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1658">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F16C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F16C8">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1738"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1738">
+    <command xml:space="preserve">aft</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x035743D0">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You push the button to call the elevator.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x034D7688">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You push the button to call the elevator. After a short while, the doors open and you enter.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D76F8"/>
+      <child nodeId="node-0x034D7848"/>
+      <child nodeId="node-0x035746E0"/>
+      <child nodeId="node-0x03574B40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D76F8">
     <command xml:space="preserve">go up</command>
     <result xml:space="preserve">This is the top level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -271,10 +426,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC478"/>
+      <child nodeId="node-0x034D7768"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC478">
+  <item nodeId="node-0x034D7768">
     <command xml:space="preserve">go down</command>
     <result xml:space="preserve">The lift churns upwards towards the second floor.&#x000A;The lift churns upwards towards the third floor.&#x000A;The lift churns upwards towards the bottom floor.&#x000A;This is the bottom level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -282,10 +437,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC5C8"/>
+      <child nodeId="node-0x034D77D8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC5C8">
+  <item nodeId="node-0x034D77D8">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">Cargo Bay&#x000A;You can see a Cargo Airlock here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -293,7 +448,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02BFC638">
+  <item nodeId="node-0x034D7848">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">The lift churns upwards towards the second floor.&#x000A;The lift churns upwards towards the third floor.&#x000A;The lift churns upwards towards the bottom floor.&#x000A;This is the bottom level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -301,10 +456,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC6A8"/>
+      <child nodeId="node-0x034D78B8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC6A8">
+  <item nodeId="node-0x034D78B8">
     <command xml:space="preserve">go up</command>
     <result xml:space="preserve">This is the top level.&#x000A;The lift churns upwards towards the third floor.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -312,10 +467,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC718"/>
+      <child nodeId="node-0x034D7928"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC718">
+  <item nodeId="node-0x034D7928">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">Engineering&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -323,10 +478,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC788"/>
+      <child nodeId="node-0x034D7998"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC788">
+  <item nodeId="node-0x034D7998">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">Engine Bay 2&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -334,10 +489,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC7F8"/>
+      <child nodeId="node-0x034D7A08"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC7F8">
+  <item nodeId="node-0x034D7A08">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -345,10 +500,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC868"/>
+      <child nodeId="node-0x034D7A78"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC868">
+  <item nodeId="node-0x034D7A78">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -356,10 +511,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC8D8"/>
+      <child nodeId="node-0x034D7AE8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC8D8">
+  <item nodeId="node-0x034D7AE8">
     <command xml:space="preserve">a</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -367,10 +522,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC948"/>
+      <child nodeId="node-0x034D7B58"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC948">
+  <item nodeId="node-0x034D7B58">
     <command xml:space="preserve">fore</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -378,10 +533,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFC9B8"/>
+      <child nodeId="node-0x034D7BC8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFC9B8">
+  <item nodeId="node-0x034D7BC8">
     <command xml:space="preserve">port</command>
     <result xml:space="preserve">Engineering&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -389,10 +544,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCA28"/>
+      <child nodeId="node-0x034D7C38"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCA28">
+  <item nodeId="node-0x034D7C38">
     <command xml:space="preserve">aft</command>
     <result xml:space="preserve">Engine Bay 2&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -400,10 +555,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCA98"/>
+      <child nodeId="node-0x034D7CA8"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCA98">
+  <item nodeId="node-0x034D7CA8">
     <command xml:space="preserve">port</command>
     <result xml:space="preserve">Engineering&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -411,12 +566,499 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02BFCB08"/>
+      <child nodeId="node-0x034D7D18"/>
     </children>
   </item>
-  <item nodeId="node-0x02BFCB08">
+  <item nodeId="node-0x034D7D18">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x035746E0">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">This is the top level.&#x000A;The lift churns upwards towards the first floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574750"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574750">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">The lift churns downwards towards the second floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574600">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574830"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574830">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x035747C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x035747C0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574670"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574670">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x035748A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x035748A0">
+    <command xml:space="preserve">left</command>
+    <result xml:space="preserve">That's not a verb I recognize.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574910"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574910">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574980"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574980">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x03574B40">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">The lift churns downwards towards the third floor.&#x000A;The lift churns downwards towards the second floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574AD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574AD0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x034F1C78">
+    <command xml:space="preserve">aft</command>
+    <result xml:space="preserve">Cryostasis Hold&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574440"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574440">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x035744B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x035744B0">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You push the button to call the elevator.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x03574520"/>
+    </children>
+  </item>
+  <item nodeId="node-0x03574520">
+    <command xml:space="preserve">aft</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x034D7E68">
+    <command xml:space="preserve">aft</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D7ED8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D7ED8">
+    <command xml:space="preserve">port</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D7F48"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D7F48">
+    <command xml:space="preserve">starboard</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x034D7FB8">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">That's not a verb I recognize.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D8028"/>
+      <child nodeId="node-0x034F18F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D8028">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D8098"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D8098">
+    <command xml:space="preserve">sb</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D8108"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D8108">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D8178"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D8178">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034D81E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034D81E8">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">Crew Quarters&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0D28"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0D28">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0D98"/>
+      <child nodeId="node-0x034F17A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0D98">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0E08"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0E08">
+    <command xml:space="preserve">sb</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0E78"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0E78">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0EE8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0EE8">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0F58"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0F58">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You push the button to call the elevator.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F10A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F10A8">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">This is the top level.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1038"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1038">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">The lift churns downwards towards the second floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F0FC8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F0FC8">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">The lift churns downwards towards the third floor.&#x000A;The lift churns downwards towards the second floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1118"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1118">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">The lift churns downwards towards the third floor.&#x000A;The lift churns downwards towards the second floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1188"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1188">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">This is the top level.&#x000A;The lift churns upwards towards the first floor.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x034F17A8">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1818"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1818">
+    <command xml:space="preserve">sb</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1888"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1888">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x034F18F8">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">the Commons&#x000A;The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."&#x000A;&#x000A;The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1968"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1968">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">You push the button to call the elevator.&#x000A;&#x000A;Central Lift&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F19D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F19D8">
+    <command xml:space="preserve">a</command>
+    <result xml:space="preserve">That's not a verb I recognize.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1A48"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1A48">
+    <command xml:space="preserve">aft</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1AB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1AB8">
+    <command xml:space="preserve">af</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1B28"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1B28">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Central Lift&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1B98"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1B98">
+    <command xml:space="preserve">south</command>
+    <result xml:space="preserve">Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x034F1C08"/>
+    </children>
+  </item>
+  <item nodeId="node-0x034F1C08">
+    <command xml:space="preserve">p</command>
+    <result xml:space="preserve">Dining Hall&#x000A;The Dining Hall is a typical cafeteria, with a kitchen to prepare and a buffet style line for serving the crappy spacefare available.&#x000A;&#x000A;Communications is fore of here.  The Lift shaft is portside.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
