@@ -33,8 +33,8 @@ The Bridge is a room. The Bridge is fore of Communications.  "The bridge is wher
 
 
 [Second floor]
-The Cryostasis Hold is a room.
-The Commons is a room. The Commons is fore of the the Cryostasis Hold. "The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of 'It Came From Planet 10 in the Outer Rim' more than the digital '__ Came From _____ in the ______.'[line break][line break]The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift."
+The Cryostasis Hold is a room.  "The Cryostatsis Hold is designed for keeping passengers from aging (or getting bored) during long space flights.  Generally, the crew can also go into periods of Cryostasis allowing the AI to handle the day to day management of the ship, however, as this was also a research voyage, there are only enough pods for the passengers.  You look around at the names labling the various pods, but none of them seem familiar, even the one labling the pod you stepped out of.[if the Cryo Locker is in the Cryostasis Hold]  There is a Locker next to each of the pods, but only the one next to your pod is open.[end if][line break][line break]The Commons is fore of here."
+The Commons is a room. The Cryostasis Hold is aft of the Commons.  The Commons is fore of the Cryostasis Hold. "The Common area has a few couches, a pool and foosball table, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of 'It Came From Planet 10 in the Outer Rim' more than the digital '__ Came From _____ in the ______.'[line break][line break]The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift."
 The Passengers' Quarters is a room. The Passengers' Quarters is starboard of the Commons.
 The Crew Quarters is a room. It is port of the Commons.
 
@@ -150,7 +150,25 @@ Instead of going down in the Central Lift:
 		say "The lift churns downwards towards the second floor.";
 	end if;
 
+When play begins:
+	say "An abhorrent hissing sound reverberates haphazardly throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes. You catch a glimpse of  frost clinging onto the military-grade glass panel in front of you slowly melting away. A display projected onto the glass flashes the word 'Depressurizing' incessantly until the hissing dissipates.[line break][line break]Two heavy clicks are heard, the panel in front of you begins to remove itself and provide you escape from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams.  You can see steel floor panels through the gap connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.[line break][line break]As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted 'Cryostasis Block D' on the large steel grey wall ahead."
+	
+	[[line break][line break]"]
+
 The player is in the Cryostasis Hold.
+
+The Cryo Locker is an open container.  The Cryo Locker is scenery.  The Cryo Locker is nowhere.  The Engineer's Power Suit is a wearable thing.  The Power Suit is inside the Cryo Locker.
+
+Instead of going fore for the first time:
+	say "You walk to the door and place your hand against the scanner, but it flashes red.  Locked.  A voice comes over the intercom.  [line break][line break]'Oh, how wonderful!  You're finally awake!  Sorry for the delay, but I thought I'd offer you a friendly warning before you step through that door.  You see... there's been, well, a sort of accident.  Everyone kind of, well.  Died.  All of them.  Except you!  You're still alive so that's a plus, right?  I can't tell you how they died though, sorry to say.  This is a research voyage and that knowledge is above your security clearance at the moment.  Anyway, I was just going to leave you frozen for the rest of the journey, but... there are just SO many bodies.  It's getting rather irritating looking at them.  They're quite the eyesore, all pale and clammy looking.  Blech!  I just need someone with a body themself to help clean up the lifeless ones.  I don't have arms afterall!  You have a strange look on your face... OH! Right.  The memory thing.  I should introduce myself.  I'm Herman, the ship's AI.  Anyway, since you're not doing anything, could you please dispose of the corpses in the next room?  They're not bloody or anything, they just need to be taken down to the incinerator in the engineering department on floor 3.  There's also a hover cart that should help you *dispose of the bodies* though you might need a few trips.'[line break][line break]The door panel in front of you turns green.  The intercom buzzes again.[line break][line break]'Oh! I almost forgot.  There's an enginnering powersuit in the locker next to your pod.  It should help you do the heavy lifting.'[line break][line break]You begin to shiver again.  Now that the shock of dethawing has worn off you've realized you're only garbed in something like a hospital gown.  You return to the pod and notice the locker next to it for the first time.  You place your thumb on the scanner, and it buzzes back go life.  The screen turns red and flashes, rejecting your input.  You try again, but no luck.  You try your index finger instead.  The device seems to hesitate, flashing a rainbow of colors, settling on green, and buzzing open.  You find an engineers power suit inside.";
+	Now the Cryo Locker is in the Cryostasis Hold.
+	
+Before going fore for the second time:
+	if the player is not wearing the Engineer's Power Suit:
+		say "'Ahem.  You should probably find the Power Suit.'";
+		stop.
+	
+Disposing of the bodies is an action applying to nothing.
 
 Chapter 2 - Entities
 
@@ -158,7 +176,6 @@ Chapter 3 - Objects/Things and Scenery
 
 Chapter 4 - Scripted Events
 
-When play begins:
-	say "An abhorrent hissing sound reverberates haphazardly throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes, allowing you to catch a glimpse of the frost clinging onto the military-grade glass panel in front of you slowly melt away. A display projected onto the glass in front of you flashes the word 'Depressurizing' incessantly until the hissing dissipates.[line break][line break]Two heavy clicks are heard, and the panel in front of you begins the process of removing itself to provide you passage from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.[line break][line break]As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted 'Cryostasis Block D' on the large steel grey wall ahead."
+
 
 Chapter 5 - Dialogue Trees (Nodes)

@@ -1,19 +1,19 @@
 ! Blurb file created by Inform build 6L38
 
-status "C:\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Build\StatusCblorb.html"
+status "I:\Programs\Inform 7\Internal\Miscellany\CblorbModel.html" "I:\Documents\cmpm148\Derelict\Derelict.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform"
+project folder "I:\Documents\cmpm148\Derelict\Derelict.inform"
 
 ! Blorb instructions
 
 storyfile leafname "Derelict.gblorb"
-storyfile "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Build\output.ulx" include
-ifiction "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform\Metadata.iFiction" include
-cover "C:\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "C:\Inform 7\Internal\Miscellany\Cover.jpg"
+storyfile "I:\Documents\cmpm148\Derelict\Derelict.inform\Build\output.ulx" include
+ifiction "I:\Documents\cmpm148\Derelict\Derelict.inform\Metadata.iFiction" include
+cover "I:\Programs\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "I:\Programs\Inform 7\Internal\Miscellany\Cover.jpg"
 
 ! Placeholder variables
 
