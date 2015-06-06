@@ -5,6 +5,7 @@ Chapter 0 - Setup
 The story headline is "A dark mystery".
 Use American dialect.
 Use no scoring.
+Release along with the source text, an interpreter, and a website.
 
 Chapter 1 - World Ruleset
 

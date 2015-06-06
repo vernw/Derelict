@@ -6,6 +6,6 @@ Derelict.inform/Metadata.iFiction
 Derelict.inform/Release.blurb
 Derelict.inform/manifest.plist
 Derelict.inform/notes.rtf
-Derelict.inform/Skein.skein
+*.skein
 Derelict.inform/Settings.plist
 *.html
