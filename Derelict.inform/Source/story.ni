@@ -17,7 +17,6 @@ Understand "p" as port.
 Understand "sb" as starboard.
 Index map with fore mapped as north. Index map with aft mapped as south. Index map with port mapped as west. Index map with starboard mapped as east.
 
-LiftFloor is a number variable and 2.
 EncounterCount is a number variable and 5.
 BodyCount is a number variable and 3.
 
@@ -117,12 +116,13 @@ The plans are in engineering.  The description of the plans is "Includes plans f
 Chapter 4 - Scripted Events
 
 Instead of going:
-	if a random chance of 1 in 8 succeeds:
-		if EncounterCount is less than 5:
-			say "[one of]For some reason, you can't shake the feeling that you are being watched - does something yet live?[or]You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?[or]Some shuffling and scratching echoes throughout the walls; you wonder for a moment if this is Herman's doing.[or]As you enter, you catch something from the corner of your eye and turn to face it. Unfortunately, you don't find anything; your reflexes aren't so sharp after an extended period of time in cryostasis.[purely at random]";
-			increase EncounterCount by 1;
-		otherwise:
-			now the Creature is in the location of the player;
+	if turn count is greater than 5:
+		if a random chance of 1 in 8 succeeds:
+			if EncounterCount is less than 5:
+				say "[one of]For some reason, you can't shake the feeling that you are being watched - does something yet live?[or]You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?[or]Some shuffling and scratching echoes throughout the walls; you wonder for a moment if this is Herman's doing.[or]As you enter, you catch something from the corner of your eye and turn to face it. Unfortunately, you don't find anything; your reflexes aren't so sharp after an extended period of time in cryostasis.[purely at random]";
+				increase EncounterCount by 1;
+			otherwise:
+				now the Creature is in the location of the player;
 	continue the action;
 
 Instead of going fore for the first time:
@@ -132,10 +132,10 @@ Instead of going fore for the first time:
 	
 Disposing of the bodies is an action applying to nothing.
 
-Understand "Dispose of the bodies" or "Dispose of bodies" or "Clean bodies" or "Clean the bodies" or "Get rid of the bodies" or "Clean up bodies" or "Clean up the bodies" or "Use the hover cart" or "Hover cart" as Disposing of the bodies.
+Understand "Dispose of the bodies" or "Dispose of bodies" or "Clean bodies" or "Get rid of the bodies" or "Clean up bodies" or "Clean up the bodies" or "Use the hover cart" or "Hover cart" as Disposing of the bodies.
 Check Disposing of the bodies:
 	if the player is not in the Commons:
-		say "Surprisingly enough, this area seems to be clear of bodies." instead.
+		say "Surprisingly enough, there aren't any bodies here." instead.
 
 Carry out Disposing of the bodies:
 	if BodyCount is 3:
@@ -154,6 +154,7 @@ Carry out Disposing of the bodies:
 
 Before going fore from Communications for the first time:
 	say "A voice cracks in over the intercom.[line break][line break]'Ahem. Yes. Actually.  Now that you're here, well.  I've changed my mind.  I think you've exposed yourself to quite enough bodies for one day! Ha ha! (oh my that sounded rather forced...) I would put you back into Cryosleep, but, well, you broke the last working pod when you kicked the door off it's hinges.  So I suppose you can just wander around and watch TV or something in the Commons.  We're only going to be flying for a couple more months, hopefully you can entertain yourself till we arrive.  There are a few fabrication tools and plans lying around in Engineering if you're feeling more, heh, constructive.  I'll check in on you from time to time.  It gets pretty boring out here for an AI as well.  Only so many times you can read through the 'Galactic History of Everything' before it just seems trite.'";
+	stop;
 
 Chapter 5 - Dialogue Trees
 
@@ -163,12 +164,20 @@ Section 1 - The Text
 
 Table of Quip Texts (continued)
 quip	quiptext
-who-am-i	"You try to talk with the creature."
-say-nothing	"You decide not to say anything after all[enable the say-nothing quip][terminate the conversation]." 
+who-am-i	"You try to talk with the creature.  It doesn't immediately appear to understand you, but instead cocks its head in a bizarrely human-like fashion.[enable the approach quip][enable the can-speak quip]"
+say-nothing	"You stare in silence at the creature.  It stares back momentarily, then breaks your gaze skitters around nervously."
+can-speak	"You ask the creature if it can speak.  It responds with a series of clicks and hisses."
+approach	"You slowly walk towards the creature, reaching a hand out.  It hesitantly approaches you, then turns around and dashes towards the air duct.  It's movements are so quick, they barely register before your eyes.[terminate the conversation]"
 
 Table of Alien Interactions
 prompt	response	enabled 
-"What are you?"	who-am-i	1 
+"What are you?"	who-am-i	1
+"Can you speak?"	can-speak	0
+"Approach the Creature."	approach	0
 "Say nothing."	say-nothing	1 
 
 Section 2 - Dialogue affects the game
+
+After quipping when the current quip is approach: 
+	Now the Creature is nowhere;
+	say "You hear a familiar voice once again. [line break][line break]'Oh dear! That was rather frightening.  You see, ah well I guess you've discovered it now anyway.  That was what the scientists were doing their research on, and as you have also seen, everyone researching it is now dead.  I highly recommend you stay away from that... thing.'"
