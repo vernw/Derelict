@@ -57,119 +57,12 @@ Engineering is a room.  "Engineering is an expansive room with a multitude of pu
 [Bottom floor]
 The Cargo Bay is a room. The Cargo Bay is fore of the Airlock.  "General purpose storage facility.  With space access, for all your spacing needs.[line break][line break]The Lift is fore, the airlock is aft."
 Outer Space is a room. Outer Space is aft of the Airlock.  "Space... it seems to go on forever, until you get to the end and there's a gorilla chucking barrels at you!  If you managed to get outside the ship you broke something, congratulations!  Try 'undo' until you're back in the ship."
-The Airlock is a door. It is closed and openable and locked.
 
 [Central Lift]
 The Central Lift 1F is a room. It is aft of the CQ Door and port of the DH Door. "You've arrived topside. The first floor houses all the main command facilities necessary to run the ship. [line break][line break]The Captain's Quarters is fore of here and the Dining Hall is starboard.  You can take the elevator down to the second floor."
 The Central Lift 2F is a room. It is fore of the Commons and below the Central Lift 1F. "The second floor is host to the sleeping quarters for both crew and passengers. Additionally, the Cryostasis Bay can be found towards the stern.[line break][line break]The Commons is aft of here.  You can take the elevator up to the first floor, or down to the third."
 The Central Lift 3F is a room. It is fore of Engineering and below the Central Lift 2F. "The third floor, otherwise called the Engineering floor, is home to the systems that run and fly the ship. Inclusive of the engine bays, Herman's AI core is secured on this floor as well.[line break][line break]Engineering is aft of here.  You can take the elevator up to the second floor, or down to the fourth."
 The Central Lift 4F is a room. It is fore of the Cargo Bay and below the Central Lift 3F. "The lowest floor is the Cargo Bay, located here at the stern for ease of access when docking. The large airlock door may be malfunctional, locking the elevator door in the event.[line break][line break]The Cargo Bay is aft of here.  You can take the elevator up to the third floor."
-
-[The Central Lift is a room. It is fore of the Commons. [The Central Lift is aft of the Captain's Quarters and port of the Dining Hall.]
-Instead of going aft from the Captain's Quarters:
-	If LiftFloor is not 1
-	begin;
-		say "You push the button to call the elevator. After a short while, the doors open and you enter.";
-		now the Central Lift is mapped aft of the Captain's Quarters;
-		now nothing is mapped aft of the Central Lift;
-		now nothing is mapped port of the Central Lift;
-	end if;
-	continue the action;
-Instead of going port in the Dining Hall:
-	If LiftFloor is not 1
-	begin;
-		say "You push the button to call the elevator. After a short while, the doors open and you enter.";
-		now the Central Lift is mapped port of the Dining Hall;
-		now nothing is mapped aft of the Central Lift;
-		now nothing is mapped port of the Central Lift;
-	end if;
-	continue the action;
-Instead of going fore in the Commons:
-	If LiftFloor is not 2
-	begin;
-		say "You push the button to call the elevator. After a short while, the doors open and you enter.";
-		now the Central Lift is mapped fore of the Commons;
-		now nothing is mapped fore of the Central Lift;
-		now nothing is mapped port of the Central Lift;
-		now nothing is mapped starboard of the Central Lift;
-	end if;
-	continue the action;
-Instead of going fore in Engineering:
-	If the LiftFloor is not 3
-	begin;
-		say "You push the button to call the elevator. After a short while, the doors open and you enter.";
-		now the Central Lift is mapped fore of the Engineering;
-		now nothing is mapped fore of the Central Lift;
-		now nothing is mapped port of the Central Lift;
-		now nothing is mapped starboard of the Central Lift;
-	end if;
-	continue the action;
-Instead of going fore in the Cargo Bay:
-	If the LiftFloor is not 4
-	begin;
-		say "You push the button to call the elevator. After a short while, the doors open and you enter.";
-		now the Central Lift is mapped fore of the Cargo Bay;
-		now nothing is mapped fore of the Central Lift;
-		now nothing is mapped port of the Central Lift;
-		now nothing is mapped starboard of the Central Lift;
-	end if;
-	continue the action;
-	
-Instead of going up in the Central Lift:
-	If the Central Lift is mapped aft of the Captain's Quarters
-	begin;
-		say "This is the top level.";
-	end if;
-	If the Central Lift is mapped fore of the Commons
-	begin;
-		now LiftFloor is 1;
-		now the Captain's Quarters is mapped fore of the Central Lift;
-		now the Dining Hall is mapped starboard of the Central Lift;
-		now nothing is mapped fore of the Commons;
-		say "The lift churns upwards towards the first floor.";
-	end if;
-	If the Central Lift is mapped fore of Engineering
-	begin;
-		now LiftFloor is 2;
-		now the Commons is mapped aft of the Central Lift;
-		now nothing is mapped fore of Engineering;
-		say "The lift churns upwards towards the second floor.";
-	end if;
-	If the Central Lift is mapped fore of the Cargo Bay
-	begin;
-		now LiftFloor is 3;
-		now Engineering is mapped aft of the Central Lift;
-		now nothing is mapped fore of the Cargo Bay;
-		say "The lift churns upwards towards the third floor.";
-	end if;
-	
-Instead of going down in the Central Lift:
-	If the Central Lift is mapped fore of the Cargo Bay
-	begin;
-		say "This is the bottom level.";
-	end if;
-	If the Central Lift is mapped fore of Engineering
-	begin;
-		now LiftFloor is 4;
-		now the Cargo Bay is mapped aft of the Central Lift;
-		now nothing is mapped fore of Engineering;
-		say "The lift churns downwards towards the bottom floor.";
-	end if;
-	If the Central Lift is mapped fore of the Commons
-	begin;
-		now LiftFloor is 3;
-		now Engineering is mapped aft of the Central Lift;
-		now nothing is mapped fore of the Commons;
-		say "The lift churns downwards towards the third floor.";
-	end if;
-	If the Central Lift is mapped aft of the Captain's Quarters
-	begin;
-		now LiftFloor is 2;
-		now the Commons are mapped aft of the Central Lift;
-		now nothing is mapped aft of the Captain's Quarters;
-		now nothing is mapped port of the Dining Hall;
-		say "The lift churns downwards towards the second floor.";
-	end if;]
 
 When play begins:
 	say "TUTORIAL: Words written in *asterisks* are specific actions that the player can take.[line break][line break]An abhorrent hissing sound reverberates throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes. You catch a glimpse of frost clinging onto the military-grade glass panel in front of you slowly melting away. A display projected onto the glass flashes the word 'Depressurizing' incessantly until the hissing dissipates.[line break][line break]Two heavy clicks are heard, the panel in front of you begins to remove itself and provide you escape from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams.  You can see steel floor panels through the gap connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.[line break][line break]As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted 'Cryostasis Block D' on the large steel grey wall ahead."
@@ -181,6 +74,8 @@ The player is in the Cryostasis Hold.
 Chapter 2 - Entities
 
 Chapter 3 - Objects/Things and Scenery
+
+The Airlock is a door. It is closed and openable and locked.
 
 The B Door is a door.  The B Door is fore of Communications and aft of the Bridge.  The B Door is locked and scenery.
 
@@ -220,13 +115,13 @@ The plans are in engineering.  The description of the plans is "Includes plans f
 Chapter 4 - Scripted Events
 
 Instead of going fore for the first time:
-	say "You walk to the door and place your hand against the scanner, but it flashes red.  Locked.  A voice comes over the intercom.  [line break][line break]'Oh, how wonderful!  You're finally awake!  Sorry for the delay, but I thought I'd offer you a friendly warning before you step through that door.  You see... there's been, well, a sort of accident.  Everyone kind of, well.  Died.  All of them.  Except you!  You're still alive so that's a plus, right?  I can't tell you how they died though, sorry to say.  This is a research voyage and that knowledge is above your security clearance at the moment.  Anyway, I was just going to leave you frozen for the rest of the journey, but... there are just SO many bodies.  It's getting rather irritating looking at them.  They're quite the eyesore, all pale and clammy looking.  Blech!  I just need someone with a body themself to help clean up the lifeless ones.  I don't have arms afterall!  You have a strange look on your face... OH! Right.  The memory thing.  I should introduce myself.  I'm Herman, the ship's AI.  Anyway, since you're not doing anything, could you please dispose of the corpses in the next room?  They're not bloody or anything, they just need to be taken down to the incinerator in the engineering department on floor 3.  There's also a hover cart that should help you *dispose of the bodies* though you might need a few trips.'[line break][line break]The door panel in front of you turns green.  The intercom buzzes again.[line break][line break]'Oh! I almost forgot.  There's an enginnering powersuit in the locker next to your pod.  It should help you do the heavy lifting.'[line break][line break]You return to the pod and notice the locker next to it for the first time.  As you approach, the locking mechanism flashes green and it pops open.  You find an engineer's power suit inside, and you put it on.";
+	say "You walk to the door and place your hand against the scanner, but it flashes red.  Locked.  A voice comes over the intercom.  [line break][line break]'Oh, how wonderful!  You're finally awake!  Sorry for the delay, but I thought I'd offer you a friendly warning before you step through that door.  You see... there's been, well, a sort of accident.  Everyone kind of, well.  Died.  All of them.  Except you!  You're still alive so that's a plus, right?  I can't tell you how they died though, sorry to say.  This is a research voyage and that knowledge is above your security clearance at the moment.  Anyway, I was just going to leave you frozen for the rest of the journey, but... there are just SO many bodies.  It's getting rather irritating looking at them.  They're quite the eyesore, all pale and clammy looking.  Blech!  I just need someone with a warm body themself to help clean up the lifeless ones.  I don't have arms after all!  You have a strange look on your face... OH! Right.  The memory thing.  I should introduce myself.  I'm Herman, the ship's AI.  Anyway, since you're not doing anything, could you please dispose of the corpses in the next room?  They're not bloody or anything, they just need to be taken down to the incinerator in the engineering department on floor 3.  There's also a hover cart that should help you *dispose of the bodies* though you might need a few trips.'[line break][line break]The door panel in front of you turns green.  The intercom buzzes again.[line break][line break]'Oh! I almost forgot.  There's an enginnering powersuit in the locker next to your pod.  It should help you do the heavy lifting.'[line break][line break]You return to the pod and notice the locker next to it for the first time.  As you approach, the locking mechanism flashes green and it pops open.  You find an engineer's power suit inside, and you put it on.";
 	Now the Locker is in the Cryostasis Hold;
 	Now the player is wearing the Power Suit.
 	
 Disposing of the bodies is an action applying to nothing.
 
-Understand "Dispose of the bodies" or "Dispose of bodies" or "Clean bodies" or "Clean the bodies" or "Get rid of the bodies" or "Clean up bodies" or "Clean up the bodies" or "Use the hover cart" as Disposing of the bodies.
+Understand "Dispose of the bodies" or "Dispose of bodies" or "Clean bodies" or "Clean the bodies" or "Get rid of the bodies" or "Clean up bodies" or "Clean up the bodies" or "Use the hover cart" or "Hover cart" as Disposing of the bodies.
 Check Disposing of the bodies:
 	if the player is not in the Commons:
 		say "Surprisingly enough, there are no bodies here." instead.
