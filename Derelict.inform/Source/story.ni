@@ -145,3 +145,60 @@ Before going fore from Communications for the first time:
 	say "A voice cracks in over the intercom.[line break][line break]'Ahem. Yes. Actually.  Now that you're here, well.  I've changed my mind.  I think you've exposed yourself to quite enough bodies for one day! Ha ha! (oh my that sounded rather forced...) I would put you back into Cryosleep, but, well, you broke the last working pod when you kicked the door off it's hinges.  So I suppose you can just wander around and watch TV or something in the Commons.  We're only going to be flying for a couple more months, hopefully you can entertain yourself till we arrive.  There are a few fabrication tools and plans lying around in Engineering if you're feeling more, heh, constructive.  I'll check in on you from time to time.  It gets pretty boring out here for an AI as well.  Only so many times you can read through the 'Galactic History of Everything' before it just seems trite.'";
 
 Chapter 5 - Dialogue Trees (Nodes)
+
+Include Quip-Based Conversation by Michael Martin.
+
+Section 1 - The Text
+
+Table of Quip Texts (continued)
+quip	quiptext 
+selftalk	"Talking to yourself is not particularly fun." 
+who-am-i	"[enable the why-hate quip][enable the hate-you quip]'My name is Joe Schmoe and Inform hates me.'" 
+why-hate	"[disable the hate-you quip][enable the hate-you-2 quip][enable the yay-inform quip]'I tried to compile a game and it gave me 40 Problem messages.'" 
+yay-inform	"'Thanks so much! You're the greatest!'" 
+hate-you	"'I hate you!'[paragraph break] Joe kills you." 
+hate-you-2	"'I hate you!'[paragraph break] Joe kills you." 
+hate-you-3	"'I hate you!'[paragraph break] Joe kills you." 
+hate-pedants	"'I hate pedants!'[paragraph break] Joe kills you." 
+yay-monkeys	"[enable the hate-you-3 quip][enable the hate-pedants quip][enable the yay-you quip]'Of course I like monkeys.'" 
+yay-you	"'Now we can be friends!'" 
+say-nothing	"You decide not to say anything after all[enable the say-nothing quip][terminate the conversation]." 
+ehn-apes	"'Apes are OK, I guess.'" 
+ehn-lemurs	"'I don't really have an opinion on lemurs.'" 
+xyzzy	"What's the other magic word?" 
+
+
+Table of Joe Comments
+prompt	response	enabled 
+"Who are you?"	who-am-i	1 
+"Why does Inform hate you?"	why-hate	0 
+"You probably just left out a semi-colon."	yay-inform	0 
+"I don't care."	hate-you	0 
+"Ha, ha. Inform hates you."	hate-you-2	0 
+"Do you like a monkey?"	yay-monkeys	1 
+"Only crazy people like monkeys."	hate-you-3	0 
+"No, I said 'a monkey', not 'monkeys'."	hate-pedants	0 
+"I like monkeys too."	yay-you	0 
+"Say nothing"	say-nothing	1 
+
+
+Table of Quip Followups (continued)
+quip	option	result 
+yay-monkeys	"What about apes?"	ehn-apes 
+yay-monkeys	"What about lemurs?"	ehn-lemurs 
+
+
+Table of Magic Followups
+prompt	response	enabled 
+"PLUGH"	yay-you	1 
+"There are at least two; which one?"	hate-pedants	1 
+
+
+Section 2 - Dialogue affects the game
+
+After quipping when the current quip is hate-you: end the story saying "You have died".
+After quipping when the current quip is hate-you-2: end the story saying "You have died".
+After quipping when the current quip is hate-you-3: end the story saying "You have died".
+After quipping when the current quip is hate-pedants: end the story saying "You have died".
+After quipping when the current quip is yay-inform: end the story finally saying "You have won".
+After quipping when the current quip is yay-you: end the story finally saying "You have won".
