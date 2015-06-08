@@ -116,9 +116,9 @@ The plans are in engineering.  The description of the plans is "Includes plans f
 
 Chapter 4 - Scripted Events
 
-Instead of going fore:
-	if EncounterCount is less than 5:
-		if a random chance of 1 in 8 succeeds:
+Instead of going:
+	if a random chance of 1 in 8 succeeds:
+		if EncounterCount is less than 5:
 			say "[one of]For some reason, you can't shake the feeling that you are being watched - does something yet live?[or]You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?[or]Some shuffling and scratching echoes throughout the walls; you wonder for a moment if this is Herman's doing.[or]As you enter, you catch something from the corner of your eye and turn to face it. Unfortunately, you don't find anything; your reflexes aren't so sharp after an extended period of time in cryostasis.[purely at random]";
 			increase EncounterCount by 1;
 		otherwise:
