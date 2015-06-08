@@ -7,7 +7,7 @@ Use American dialect.
 Use no scoring.
 Release along with the source text, an interpreter, and a website.
 
-Chapter 1 - World Ruleset
+Chapter 1 - World Ruleset and Map Layout
 
 Fore is a direction. Aft is a direction. The opposite of fore is aft. The opposite of aft is fore. 
 Port is a direction. Starboard is a direction.  The opposite of port is starboard. The opposite of starboard is port.
@@ -18,7 +18,7 @@ Understand "sb" as starboard.
 Index map with fore mapped as north. Index map with aft mapped as south. Index map with port mapped as west. Index map with starboard mapped as east.
 
 LiftFloor is a number variable and 2.
-
+EncounterCount is a number variable and 5.
 BodyCount is a number variable and 3.
 
 Instead of going South: say "Your suit's built-in compass is for terrestrial exploration; there's no magnetic field in space.".
@@ -73,6 +73,9 @@ The player is in the Cryostasis Hold.
 
 Chapter 2 - Entities
 
+An alien is a kind of man.
+The Creature is an alien. Understand "alien" and "lizard" as Creature. The description of the Creature is "A seemingly bipedal figure with a narrow reptilian muzzle stands before you on a pair of digitigrade legs ending in clawed toes. It opens its jaw slightly, revealing rows of dagger-sharp teeth to further embolden its fierce and menacing visage. A long, prehensile tail swings gently behind it. Its slender, yet lithe physique and mostly dark sable scale coloration seems to allow it to navigate the ships's duct system and remain undetected with shocking ease.[line break][line break]Its ice-blue reptilian eyes glare at you expectantly."The litany of the Creature is the Table of Alien Interactions.
+
 Chapter 3 - Objects/Things and Scenery
 
 The Airlock is a door. It is closed and openable and locked.
@@ -111,11 +114,19 @@ Understand "Machines" as Fabrication Machines.
 
 The plans are in engineering.  The description of the plans is "Includes plans for .... "
 
-
 Chapter 4 - Scripted Events
 
+Instead of going fore:
+	if EncounterCount is less than 5:
+		if a random chance of 1 in 8 succeeds:
+			say "[one of]For some reason, you can't shake the feeling that you are being watched - does something yet live?[or]You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?[or]Some shuffling and scratching echoes throughout the walls; you wonder for a moment if this is Herman's doing.[or]As you enter, you catch something from the corner of your eye and turn to face it. Unfortunately, you don't find anything; your reflexes aren't so sharp after an extended period of time in cryostasis.[purely at random]";
+			increase EncounterCount by 1;
+		otherwise:
+			now the Creature is in the location of the player;
+	continue the action;
+
 Instead of going fore for the first time:
-	say "You walk to the door and place your hand against the scanner, but it flashes red.  Locked.  A voice comes over the intercom.  [line break][line break]'Oh, how wonderful!  You're finally awake!  Sorry for the delay, but I thought I'd offer you a friendly warning before you step through that door.  You see... there's been, well, a sort of accident.  Everyone kind of, well.  Died.  All of them.  Except you!  You're still alive so that's a plus, right?  I can't tell you how they died though, sorry to say.  This is a research voyage and that knowledge is above your security clearance at the moment.  Anyway, I was just going to leave you frozen for the rest of the journey, but... there are just SO many bodies.  It's getting rather irritating looking at them.  They're quite the eyesore, all pale and clammy looking.  Blech!  I just need someone with a warm body themself to help clean up the lifeless ones.  I don't have arms after all!  You have a strange look on your face... OH! Right.  The memory thing.  I should introduce myself.  I'm Herman, the ship's AI.  Anyway, since you're not doing anything, could you please dispose of the corpses in the next room?  They're not bloody or anything, they just need to be taken down to the incinerator in the engineering department on floor 3.  There's also a hover cart that should help you *dispose of the bodies* though you might need a few trips.'[line break][line break]The door panel in front of you turns green.  The intercom buzzes again.[line break][line break]'Oh! I almost forgot.  There's an enginnering powersuit in the locker next to your pod.  It should help you do the heavy lifting.'[line break][line break]You return to the pod and notice the locker next to it for the first time.  As you approach, the locking mechanism flashes green and it pops open.  You find an engineer's power suit inside, and you put it on.";
+	say "You walk to the door and place your hand against the scanner, but it flashes red.  Locked.  A voice comes over the intercom.  [line break][line break]'Oh, how wonderful!  You're finally awake!  Sorry for the delay, but I thought I'd offer you a friendly warning before you step through that door.  You see... there's been, well, a sort of accident.  Everyone kind of, well...died.  All of them.  Except you!  You're still alive, so that's a plus, right?  I can't tell you how they died though, sorry to say.  This is a research voyage and that knowledge is above your security clearance at the moment.  Anyway, I was just going to leave you frozen for the rest of the journey, but... there are just SO many bodies.  It's getting rather irritating looking at them.  They're quite the eyesore, all pale and clammy looking.  Blech!  I just need someone with a warm body themself to help clean up the lifeless ones.  I don't have arms after all!  You have a strange look on your face... OH! Right.  The memory thing.  I should introduce myself.  I'm Herman, the ship's AI.  Anyway, since you're not doing anything, could you please dispose of the corpses in the next room?  They're not bloody or anything, they just need to be taken down to the incinerator in the engineering department on floor 3.  There's also a hover cart that should help you *dispose of the bodies* though you might need a few trips.'[line break][line break]The door panel in front of you turns green.  The intercom buzzes again.[line break][line break]'Oh! I almost forgot.  There's an enginering powersuit in the locker next to your pod.  It should help you do the heavy lifting.'[line break][line break]You return to the pod and notice the locker next to it for the first time.  As you approach, the locking mechanism flashes green and it pops open.  You find an engineer's power suit inside, and you put it on.";
 	Now the Locker is in the Cryostasis Hold;
 	Now the player is wearing the Power Suit.
 	
@@ -124,7 +135,7 @@ Disposing of the bodies is an action applying to nothing.
 Understand "Dispose of the bodies" or "Dispose of bodies" or "Clean bodies" or "Clean the bodies" or "Get rid of the bodies" or "Clean up bodies" or "Clean up the bodies" or "Use the hover cart" or "Hover cart" as Disposing of the bodies.
 Check Disposing of the bodies:
 	if the player is not in the Commons:
-		say "Surprisingly enough, there are no bodies here." instead.
+		say "Surprisingly enough, this area seems to be clear of bodies." instead.
 
 Carry out Disposing of the bodies:
 	if BodyCount is 3:
@@ -144,61 +155,20 @@ Carry out Disposing of the bodies:
 Before going fore from Communications for the first time:
 	say "A voice cracks in over the intercom.[line break][line break]'Ahem. Yes. Actually.  Now that you're here, well.  I've changed my mind.  I think you've exposed yourself to quite enough bodies for one day! Ha ha! (oh my that sounded rather forced...) I would put you back into Cryosleep, but, well, you broke the last working pod when you kicked the door off it's hinges.  So I suppose you can just wander around and watch TV or something in the Commons.  We're only going to be flying for a couple more months, hopefully you can entertain yourself till we arrive.  There are a few fabrication tools and plans lying around in Engineering if you're feeling more, heh, constructive.  I'll check in on you from time to time.  It gets pretty boring out here for an AI as well.  Only so many times you can read through the 'Galactic History of Everything' before it just seems trite.'";
 
-Chapter 5 - Dialogue Trees (Nodes)
+Chapter 5 - Dialogue Trees
 
 Include Quip-Based Conversation by Michael Martin.
 
 Section 1 - The Text
 
 Table of Quip Texts (continued)
-quip	quiptext 
-selftalk	"Talking to yourself is not particularly fun." 
-who-am-i	"[enable the why-hate quip][enable the hate-you quip]'My name is Joe Schmoe and Inform hates me.'" 
-why-hate	"[disable the hate-you quip][enable the hate-you-2 quip][enable the yay-inform quip]'I tried to compile a game and it gave me 40 Problem messages.'" 
-yay-inform	"'Thanks so much! You're the greatest!'" 
-hate-you	"'I hate you!'[paragraph break] Joe kills you." 
-hate-you-2	"'I hate you!'[paragraph break] Joe kills you." 
-hate-you-3	"'I hate you!'[paragraph break] Joe kills you." 
-hate-pedants	"'I hate pedants!'[paragraph break] Joe kills you." 
-yay-monkeys	"[enable the hate-you-3 quip][enable the hate-pedants quip][enable the yay-you quip]'Of course I like monkeys.'" 
-yay-you	"'Now we can be friends!'" 
+quip	quiptext
+who-am-i	"You try to talk with the creature."
 say-nothing	"You decide not to say anything after all[enable the say-nothing quip][terminate the conversation]." 
-ehn-apes	"'Apes are OK, I guess.'" 
-ehn-lemurs	"'I don't really have an opinion on lemurs.'" 
-xyzzy	"What's the other magic word?" 
 
-
-Table of Joe Comments
+Table of Alien Interactions
 prompt	response	enabled 
-"Who are you?"	who-am-i	1 
-"Why does Inform hate you?"	why-hate	0 
-"You probably just left out a semi-colon."	yay-inform	0 
-"I don't care."	hate-you	0 
-"Ha, ha. Inform hates you."	hate-you-2	0 
-"Do you like a monkey?"	yay-monkeys	1 
-"Only crazy people like monkeys."	hate-you-3	0 
-"No, I said 'a monkey', not 'monkeys'."	hate-pedants	0 
-"I like monkeys too."	yay-you	0 
-"Say nothing"	say-nothing	1 
-
-
-Table of Quip Followups (continued)
-quip	option	result 
-yay-monkeys	"What about apes?"	ehn-apes 
-yay-monkeys	"What about lemurs?"	ehn-lemurs 
-
-
-Table of Magic Followups
-prompt	response	enabled 
-"PLUGH"	yay-you	1 
-"There are at least two; which one?"	hate-pedants	1 
-
+"What are you?"	who-am-i	1 
+"Say nothing."	say-nothing	1 
 
 Section 2 - Dialogue affects the game
-
-After quipping when the current quip is hate-you: end the story saying "You have died".
-After quipping when the current quip is hate-you-2: end the story saying "You have died".
-After quipping when the current quip is hate-you-3: end the story saying "You have died".
-After quipping when the current quip is hate-pedants: end the story saying "You have died".
-After quipping when the current quip is yay-inform: end the story finally saying "You have won".
-After quipping when the current quip is yay-you: end the story finally saying "You have won".
