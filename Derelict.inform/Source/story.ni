@@ -165,7 +165,7 @@ The Egg is in Engine Bay 2.  The Egg is scenery.  The description of the Egg is 
 
 The note pad is a thing.  The description of the note pad is "The writing on the note pad reads 'Login: mvkarn PW: X3n0mOrP#'"
 
-Understand "notepad" as note pad.
+Understand "notepad" and "pad" as note pad.
 
 After examining the note pad:
 	say "You can use these credentials to access more records on the computer, and force Herman to answer more of your questions.";
@@ -214,7 +214,7 @@ Instead of going:
 				increase EncounterCount by 1;
 			otherwise:
 				if EncounterCount is 5:
-					say "Suddenly, a lizard like creature burts out from the ventilation.  It scurries around before approaching you hesitantly.";
+					say "Suddenly, a lizard like creature bursts out from the ventilation.  It scurries around before approaching you hesitantly.";
 					now the Creature is in the location of the player;
 	continue the action;
 
