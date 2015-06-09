@@ -74,7 +74,7 @@ The Bridge is a room. The Bridge is fore of the B Door.  "The bridge is where th
 
 [Second floor]
 The Cryostasis Hold is a room.  "The Cryostasis Hold is designed for keeping passengers from aging (or getting bored) during long space flights.  Generally, the crew can also go into periods of Cryostasis allowing the AI to handle the day to day management of the ship, however, as this was also a research voyage, there are only enough pods for the passengers.  You look around at the names labling the various pods, but none of them seem familiar, even the one labling the pod you stepped out of.[if the Locker is in the Cryostasis Hold]  There is a [locker] next to each of the pods, but only the one next to your pod is open.[end if][line break][line break]The Commons is fore of here."
-The Commons is a room. The Cryostasis Hold is aft of the Commons.  The Commons is fore of the Cryostasis Hold. "The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of 'It Came From Planet 10 in the Outer Rim' more than the digital '__ Came From _____ in the ______.'  A Computer console lies in another corner of the room.[line break][line break]The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift."
+The Commons is a room. The Cryostasis Hold is aft of the Commons.  The Commons is fore of the Cryostasis Hold. "The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of 'It Came From Planet 10 in the Outer Rim' more than the digital '__ Came From _____ in the ______.'  A Computer console lies in another corner of the room.[if bodycount > 0]  There are various corpses lying around the room, looking peaceful in death.[end if][line break][line break]The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift."
 The Passengers' Quarters is a room. The Passengers' Quarters is starboard of the Commons.  "The Passenger's quarters features rows of bunk beds, storage lockers for each of them, with bathrooms along the walls.  Families are grouped together, with adult groups and lone passengers in a different section.  The accomadations are pretty sparse, as the passengers are assumed to be in Cryo for the majority of the journey.[line break][line break]The Commons is port of here."
 The Crew Quarters is a room. It is port of the Commons.  "The Crew Quarters are a bit more spruced up than the passengers.  Seeing as this was a research voyage, there's not enough Cryo space for the crew, and they are expected to live here.  The room is sectioned off via 3/4 height walls into doubles about twice the size of an office cubicle.  Bunks are more comfortable than the passenger's but still nothing approaching luxury.[line break][line break]The Commons is starboard of here."
 
@@ -149,9 +149,11 @@ The Hover Cart is in the Commons.  The Hover Cart is scenery.  "A simple moving 
 
 The Bodies is in the Commons.  The Bodies is scenery.  "The corpses of various passengers, none of them familiar.  They are cold and pale, but do not appear to have died violently.  Almost as if their consciousness simply left."
 
+Understand "corpses" as Bodies.
+
 The AI Core is in Engineering.  The AI Core is scenery.  "Herman's AI Core is made up of a console for manual override, as well as a large array of computer hardware.  It's rather plain appearance does not represent the complexity of the program housed within."
 
-The Incubation Chamber is in Engine Bay 2.  The Incubation Chamber is scenery.  Understand "incubator" or "monitoring equipment" or "monitors" as Incubation Chamber.  The description of the Incubation Chamber is "A device for artificially raising and hatching eggs, adapted from use for chickens.  Attached are monitoring systems, their data was being dumped to the ships consoles.[if the note pad is in Engine Bay 2]  Under the corner of one of the desks, you see a note pad with some writing scrawled on it. [end if]"
+The Incubation Chamber is in Engine Bay 2.  The Incubation Chamber is scenery.  Understand "incubator" or "monitoring equipment" or "monitors" or "monitor" as Incubation Chamber.  The description of the Incubation Chamber is "A device for artificially raising and hatching eggs, adapted from use for chickens.  Attached are monitoring systems, their data was being dumped to the ships consoles.[if the note pad is in Engine Bay 2]  Under the corner of one of the desks, you see a note pad with some writing scrawled on it. [end if]"
 
 Before examining the Incubation Chamber:
 	Now the note pad is in Engine Bay 2.
@@ -159,6 +161,8 @@ Before examining the Incubation Chamber:
 The Egg is in Engine Bay 2.  The Egg is scenery.  The description of the Egg is "Leathery, thick, and green colored, this shell housed a fetal version of [if EncounterCount is 5] the creature you found on the ship.[else] whatever creature was discovered in the video log.[end if]"
 
 The note pad is a thing.  The description of the note pad is "The writing on the note pad reads 'Login: mvkarn PW: X3n0mOrP#'"
+
+Understand "notepad" as note pad.
 
 After examining the note pad:
 	say "You can use these credentials to access more records on the computer, and force Herman to answer more of your questions.";
@@ -248,7 +252,7 @@ say-nothing	"You stare in silence at the creature.  It stares back momentarily, 
 can-speak	"You ask the creature if it can speak.  It responds with a series of clicks and hisses."
 approach	"You slowly walk towards the creature, reaching a hand out.  It hesitantly approaches you, then turns around and dashes towards the air duct.  It's movements are so quick, they barely register before your eyes.[terminate the conversation]"
 logon	"You log into the computer.  The desktop shows icons for a number research applications, as well as a file explorer.[enable the files quip][enable the research quip]"
-compexit	"You log out and step away from the computer.[terminate the conversation][enable the logon quip][enable the compexit quip]"
+compexit	"You log out and step away from the computer.[disable the vlog1 quip][disable the vlog2 quip][disable the vlog5 quip][disable the vlog8 quip][disable the vlog4lock quip][disable the vlog3 quip][disable the vlog6 quip][disable the vlog7 quip][disable the vlog7lock quip][disable the vlog4 quip][enable the logon quip][enable the compexit quip][terminate the conversation]"
 research	"You see charts that appear to be tracking the progress of a living organism.  It appears to cut off on December 12th, where all signs of life abruptly flatline.[enable the date quip]"
 date	"You check the date in the corner of the desktop.  December 17th."
 files	"You see a number of audio, video, and text logs, sorted by date.[enable the vlog1 quip]"
@@ -302,9 +306,9 @@ prompt	response	enabled
 "View Dec 6th, 2491 - 0658 hours"	vlog4	0
 "View Dec 8th, 2491 - 0729 hours"	vlog5	0
 "View Dec 10th, 2491 - 1255 hours"	vlog6	0
-"View July 19th 1646"	vlog7lock	0
-"View July 19th 1646"	vlog7	0
-"View July 20th 0032"	vlog8	0 
+"View Dec 11th, 2491 - 2308 hours"	vlog7lock	0
+"View Dec 11th, 2491 - 2308 hours"	vlog7	0
+"View Dec 12th, 2491 - 0148 hours"	vlog8	0 
 
 Table of Alien Interactions
 prompt	response	enabled 
@@ -315,21 +319,115 @@ prompt	response	enabled
 
 Section 2 - Dialogue affects the game
 
+[Before doing something when QBC is active(this is the QBC force conversation rule):
+	unless the current action is QBC responding with or the current action is QBC recap, say "Please log out before leaving the console." instead.
+	
+The QBC force conversation rule is listed first in the before rules.]
+
+Before going:
+	if QBC is active:
+		Disable the vlog1 quip;
+		Disable the vlog2 quip;
+		Disable the vlog3 quip;
+		Disable the vlog4lock quip;
+		Disable the vlog4 quip;
+		Disable the vlog5 quip;
+		Disable the vlog6 quip;
+		Disable the vlog7lock quip;
+		Disable the vlog7 quip;
+		Disable the vlog8 quip;
+		Enable the logon quip;
+
+RRead is a number variable and 0.
+DRead is a number variable and 0.
+FBopen is a number variable and 0.
+V1read is a number variable and 0.
+V2read is a number variable and 0.
+V3read is a number variable and 0.
+V4read is a number variable and 0.
+V5read is a number variable and 0.
+V6read is a number variable and 0.
+V7read is a number variable and 0.
+
+After quipping when the current quip is files:
+	Now FBopen is 1;
 After quipping when the current quip is compexit:
-	Now the EncounterFreq is 5;
+	Disable the vlog1 quip;
+	Disable the vlog2 quip;
+	Disable the vlog3 quip;
+	Disable the vlog4lock quip;
+	Disable the vlog4 quip;
+	Disable the vlog5 quip;
+	Disable the vlog6 quip;
+	Disable the vlog7lock quip;
+	Disable the vlog7 quip;
+	Disable the vlog8 quip;
+After quipping when the current quip is research:
+	Now RRead is 1;
+After quipping when the current quip is date:
+	Now DRead is 1;
+After quipping when the current quip is logon:
+	if FBopen is 1:
+		Enable the vlog1 quip;
+		Disable the files quip;
+	if RRead is 1:
+		Disable the research quip;
+	if DRead is 1:
+		Disable the date quip;
+	if V1read is 1:
+		Enable the vlog2 quip;
+	if V2read is 1:
+		Enable the vlog3 quip;
+	if V3read is 1:
+		if vlog4access is 1:
+			Enable the vlog4 quip;
+			Disable the vlog4lock quip;
+		otherwise:
+			Enable the vlog4lock quip;
+			Disable the vlog4 quip;
+	if V4read is 1:
+		Enable the vlog5 quip;
+	if V5read is 1:
+		Enable the vlog6 quip;
+	if V6read is 1:
+		if vlog7access is 1:
+			Enable the vlog7 quip;
+			Disable the vlog7lock quip;
+		otherwise:
+			Enable the vlog7lock quip;
+			Disable the vlog7 quip;
+	if V7read is 1:
+		Enable the vlog8 quip;
+		
+After quipping when the current quip is vlog1:
+	Now V1read is 1;
+After quipping when the current quip is vlog2:
+	Now V2read is 1;
 After quipping when the current quip is vlog3:
+	Now V3read is 1;
 	if vlog4access is 1:
 		Disable the vlog4lock quip;
 		Enable the vlog4 quip;
 After quipping when the current quip is vlog3 for the first time:
+	Now V3read is 1;
 	Now the Locker is in Crew Quarters;
 	Now the EB2 Key is in the Locker;
+After quipping when the current quip is vlog4:
+	Now V4read is 1;
+After quipping when the current quip is vlog5:
+	Now V5read is 1;
 After quipping when the current quip is vlog6:
+	Now V6read is 1;
 	if vlog7access is 1:
 		Disable the vlog7lock quip;
 		Enable the vlog7 quip;
 After quipping when the current quip is vlog6 for the first time:
+	Now V6read is 1;
 	Now Karnings Cryo Pod is in the Cryostasis Hold;
+After quipping when the current quip is vlog7:
+	Now V7read is 1;
+[After quipping when the current quip is vlog8:
+	Now implement lockdown;]
 After quipping when the current quip is approach: 
 	Now the Creature is nowhere;
 	say "You hear a familiar voice once again. [line break][line break]'Oh dear! That was rather frightening.  You see, ah well I guess you've discovered it now anyway.  That was what the scientists were doing their research on, and as you have also seen, everyone researching it is now dead.  I highly recommend you stay away from that... thing.'"
