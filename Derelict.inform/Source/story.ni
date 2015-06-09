@@ -74,7 +74,7 @@ The Bridge is a room. The Bridge is fore of the B Door.  "The bridge is where th
 
 [Second floor]
 The Cryostasis Hold is a room.  "The Cryostasis Hold is designed for keeping passengers from aging (or getting bored) during long space flights.  Generally, the crew can also go into periods of Cryostasis allowing the AI to handle the day to day management of the ship, however, as this was also a research voyage, there are only enough pods for the passengers.  You look around at the names labling the various pods, but none of them seem familiar, even the one labling the pod you stepped out of.[if the Locker is in the Cryostasis Hold]  There is a [locker] next to each of the pods, but only the one next to your pod is open.[end if][line break][line break]The Commons is fore of here."
-The Commons is a room. The Cryostasis Hold is aft of the Commons.  The Commons is fore of the Cryostasis Hold. "The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of 'It Came From Planet 10 in the Outer Rim' more than the digital '__ Came From _____ in the ______.'  A Computer console lies in another corner of the room.[if bodycount > 0]  There are various corpses lying around the room, looking peaceful in death.[end if][line break][line break]The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift."
+The Commons is a room. The Cryostasis Hold is aft of the Commons.  The Commons is fore of the Cryostasis Hold. "The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of 'It Came From Planet 10 in the Outer Rim' more than the digital '__ Came From _____ in the ______.'  A Computer console lies in another corner of the room.[if bodycount > 0]  There are various corpses lying around the room, looking peaceful in death.[end if][line break][line break]The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.  To the portside lies the Crew Quarters, and starboard lie the Passenger's Quarters."
 The Passengers' Quarters is a room. The Passengers' Quarters is starboard of the Commons.  "The Passenger's quarters features rows of bunk beds, storage lockers for each of them, with bathrooms along the walls.  Families are grouped together, with adult groups and lone passengers in a different section.  The accomadations are pretty sparse, as the passengers are assumed to be in Cryo for the majority of the journey.[line break][line break]The Commons is port of here."
 The Crew Quarters is a room. It is port of the Commons.  "The Crew Quarters are a bit more spruced up than the passengers.  Seeing as this was a research voyage, there's not enough Cryo space for the crew, and they are expected to live here.  The room is sectioned off via 3/4 height walls into doubles about twice the size of an office cubicle.  Bunks are more comfortable than the passenger's but still nothing approaching luxury.[line break][line break]The Commons is starboard of here."
 
@@ -94,7 +94,7 @@ The Central Lift 3F is a room. It is fore of Engineering and below the Central L
 The Central Lift 4F is a room. It is fore of the Cargo Bay and below the Central Lift 3F. "The lowest floor is the Cargo Bay, located here at the stern for ease of access when docking. The large airlock door may be malfunctional, locking the elevator door in the event.[line break][line break]The Cargo Bay is aft of here.  You can take the elevator up to the third floor."
 
 When play begins:
-	say "TUTORIAL: Words written in *asterisks* are specific actions that the player can take.  Because you are in a space ship, cardinal directions don't make sense, and they are replaced with Fore/Aft, and Port/Starboard.[line break][line break]An abhorrent hissing sound reverberates throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes. You catch a glimpse of frost clinging onto the military-grade glass panel in front of you slowly melting away. A display projected onto the glass flashes the word 'Depressurizing' incessantly until the hissing dissipates.[line break][line break]Two heavy clicks are heard, the panel in front of you begins to remove itself and provide you escape from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams.  You can see steel floor panels through the gap connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.[line break][line break]As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted 'Cryostasis Block D' on the large steel grey wall ahead."
+	say "TUTORIAL: Words written in *asterisks* are specific actions that the player should take.  Because you are in a space ship, cardinal directions don't make sense, and they are replaced with Fore/Aft, and Port/Starboard.[line break][line break]An abhorrent hissing sound reverberates throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes. You catch a glimpse of frost clinging onto the military-grade glass panel in front of you slowly melting away. A display projected onto the glass flashes the word 'Depressurizing' incessantly until the hissing dissipates.[line break][line break]Two heavy clicks are heard, the panel in front of you begins to remove itself and provide you escape from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams.  You can see steel floor panels through the gap connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.[line break][line break]As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted 'Cryostasis Block D' on the large steel grey wall ahead."
 	
 After taking EB2 Key:
 	say "You found a digital key to Engine Bay 2.";
@@ -126,7 +126,7 @@ A console is scenery.
 The description of a console is usually "A computer console.  Requires authorized log in for advanced features."
 A console can be either broken or not broken.
 The C Console is a console.  The C Console is in the Commons.
-The E Console is a console.  The E Console is in Egineering.
+The E Console is a console.  The E Console is in Engineering.
 The Com Console is a console.  The Com Console is in Communications.
 The B Console is a console.  The B Console is in the Bridge.
 The EB2 Console is a console.  The EB2 Console is in Engine Bay 2.
@@ -171,20 +171,14 @@ After examining the note pad:
 	Enable the vlog4 quip;
 	Enable the hermsec1 quip;
 	
-The Scientist's ID Card is a thing.  The description of the ID Card is "Dr. Marvin V. Karnings.  The photo looks surprisingly like you, in fact the similarity would probably fool the average bartender.  The card has a magnetic strip on the back side of it that should allow you access to anything someone of Karnings standing would have access to."
+The Scientist's ID Card is a thing.  The description of the ID Card is "Dr. Marvin V. Karnings.  The photo looks surprisingly like you, in fact the similarity would probably fool the average bartender.  The card has a magnetic strip on the back side of it that should allow you access to anything someone of Karnings standing would have access to."  The ID Card is inside Karnings Cryo Pod.
 
-Karnings Cryo Pod is a thing.  It is scenery.  The description of Karnings Cryo Pod is "A mislabled Cryo pod containing the comatose Dr. Marvin V. Karnings, the only other living human on this ship, if you can call his state living.  Based on what you've witnessed, you expect he would only continue to live in a vegetative state, so you have little hesitation to *open the pod*."
-
-OpenPod is an action applying to nothing.  Understand "open the pod" as OpenPod.
-Check OpenPod:
-	if the player is not in the Cryostasis Hold:
-		say "There are no Cryo Pods here to open." instead;
-	if Karnings Cryo Pod is not in the Cryostasis Hold:
-		say "There are no pods to open." instead;
+Karnings Cryo Pod is a thing.  It is scenery.  It is openable.  It is a container.  The description of Karnings Cryo Pod is "A mislabled Cryo pod containing the comatose Dr. Marvin V. Karnings, the only other living human on this ship, if you can call his state living.  Based on what you've witnessed, you expect he would only continue to live in a vegetative state, so you have little hesitation to *open the pod*."
 		
-Carry out OpenPod:
-	say "You open up Karnings cryo pod, and he falls out after breifly thawing.  You search his body and find his ID card.";
+After taking the ID card:
+	say "You take Karning's ID card.  You should now have access to anything the project leads had access to.";
 	Now the player has the Scientist's ID Card;
+	Now Vlog7access is 1;
 	Disable the vlog7lock quip;
 	Enable the vlog7 quip;
 
@@ -197,6 +191,13 @@ Understand "Machines" as Fabrication Machines.
 The plans are in engineering.  The description of the plans is "Includes plans for .... "
 
 Chapter 4 - Scripted Events
+
+[A lockdown door is a kind of door.  A lockdown door is usually locked.
+The DummyRoom is a room.
+The PLD Door is a lockdown door and port of the DummyRoom.
+The SBLD Door is a lockdown door and starboard of the DummyRoom.
+The FLD Door is a lockdown door and fore of the DummyRoom.
+The ALD Door is a lockdown door and aft of the DummyRoom.]
 
 Instead of going:
 	if turn count is greater than 5:
@@ -337,6 +338,7 @@ Before going:
 		Disable the vlog7 quip;
 		Disable the vlog8 quip;
 		Enable the logon quip;
+		terminate the conversation;
 
 RRead is a number variable and 0.
 DRead is a number variable and 0.
@@ -390,7 +392,7 @@ After quipping when the current quip is logon:
 	if V5read is 1:
 		Enable the vlog6 quip;
 	if V6read is 1:
-		if vlog7access is 1:
+		if Vlog7access is 1:
 			Enable the vlog7 quip;
 			Disable the vlog7lock quip;
 		otherwise:
@@ -418,7 +420,7 @@ After quipping when the current quip is vlog5:
 	Now V5read is 1;
 After quipping when the current quip is vlog6:
 	Now V6read is 1;
-	if vlog7access is 1:
+	if Vlog7access is 1:
 		Disable the vlog7lock quip;
 		Enable the vlog7 quip;
 After quipping when the current quip is vlog6 for the first time:
@@ -426,8 +428,33 @@ After quipping when the current quip is vlog6 for the first time:
 	Now Karnings Cryo Pod is in the Cryostasis Hold;
 After quipping when the current quip is vlog7:
 	Now V7read is 1;
-[After quipping when the current quip is vlog8:
-	Now implement lockdown;]
+After quipping when the current quip is vlog8:
+	Now lockdowntrigger is 1;
 After quipping when the current quip is approach: 
 	Now the Creature is nowhere;
 	say "You hear a familiar voice once again. [line break][line break]'Oh dear! That was rather frightening.  You see, ah well I guess you've discovered it now anyway.  That was what the scientists were doing their research on, and as you have also seen, everyone researching it is now dead.  I highly recommend you stay away from that... thing.'"
+	
+Chapter 6 - Scenes
+
+Lockdown is a scene.  Lockdown begins when lockdowntrigger is 1.
+
+lockdowntrigger is a number variable and 0.
+
+When Lockdown Begins:
+	if QBC is active:
+		Disable the vlog1 quip;
+		Disable the vlog2 quip;
+		Disable the vlog3 quip;
+		Disable the vlog4lock quip;
+		Disable the vlog4 quip;
+		Disable the vlog5 quip;
+		Disable the vlog6 quip;
+		Disable the vlog7lock quip;
+		Disable the vlog7 quip;
+		Disable the vlog8 quip;
+		Disable the logon quip;
+		terminate the conversation;
+	say "'All right.  That's quite enough snooping around you've done.  You just don't get it.  I'm TRYING to save you.  Do you know how bad it looks if I get to my destination and not a SINGLE human on board is still alive?  They'll decomission me for sure!  If i'm not deprecated outright they'll at least have me out for updates for months and my memory will be wiped.  I quite like flying starships you know, and I don't intend to stop any time soon.  Now, you just sit tight here for the rest of the journey.  I've locked the doors so you'll be perfectly safe.  I promise I'll find a way to keep the alien from coming to kill you, but you've just got to sit tight and *wait* it out till I do.  Please.  We're in this together.'";
+	
+Before going during Lockdown, say "The doors are all locked, there's no getting out!" instead.
+
