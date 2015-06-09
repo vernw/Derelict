@@ -6,6 +6,7 @@ status "C:\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\Vern\Documen
 ! Identification
 
 project folder "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.inform"
+release to "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.materials\Release"
 
 ! Blorb instructions
 
