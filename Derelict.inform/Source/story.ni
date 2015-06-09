@@ -64,6 +64,9 @@ Check TalkHerman:
 		
 Carry out TalkHerman:
 	say "'Yes? How may I help you?";
+	if vlog4access is 1:
+		Enable the hermsec1 quip;
+		Enable the hermdeathtrue quip;
 	run a conversation on the Table of Herman Interactions.
 
 [Top floor]
@@ -80,8 +83,8 @@ The Crew Quarters is a room. It is port of the Commons.  "The Crew Quarters are 
 
 [Third floor]
 The Engine Bay 1 is a room. The Engine Bay 1 is starboard of EB1 Door.  "This bay contains one of two primary engines for the ship.  The ship is designed in such a manner that even in the event of a complete failure of one engine, the ship is still operational on some level in any normal situation it would be expected to be in.  There is a space for an anti-matter fuel capsule to be manually inserted.[line break][line break]Engineering is port of here."
-The Engine Bay 2 is a room. The Engine Bay 2 is port of EB2 Door.  "This bay contains one of two primary engines for the ship.  The ship is designed in such a manner that even in the event of a complete failure of one engine, the ship is still operational on some level in any normal situation it would be expected to be in.  There is a space for an anti-matter fuel capsule to be manually inserted.[line break][line break]In one corner, a space has been created to harber an incubation chamber, with some of the engine's power being redirected to the device.  Attached are various pieces of monitoring equipment and a computer console.  Inside are the remains of an egg the size of a beach ball.[if note pad is in engine bay 2] A [note pad] lies in the corner, barely visible under one of the monitors.[end if][line break][line break]Engineering is starboard of here."
-Engineering is a room.  "Engineering is an expansive room with a multitude of purposes, including scientific research, and materials fabrication.  There are various fabrication machines in one corner, and Herman's AI core takes up a sizeable chunk of another.  [if the plans are in engineering]Next to the fabrication machines there is a selection of predesigned [plans].[end if][line break][line break]Engine Bay 1 is starboard, and Engine Bay 2 is portside.  The Lift is fore."
+The Engine Bay 2 is a room. The Engine Bay 2 is port of EB2 Door.  "This bay contains one of two primary engines for the ship.  The ship is designed in such a manner that even in the event of a complete failure of one engine, the ship is still operational on some level in any normal situation it would be expected to be in.  There is a space for an anti-matter fuel capsule to be manually inserted.[line break][line break]In one corner, a space has been created to harber an incubation chamber, with some of the engine's power being redirected to the device.  Attached are various pieces of monitoring equipment.  Inside are the remains of an egg the size of a beach ball.[if note pad is in engine bay 2] A [note pad] lies in the corner, barely visible under one of the monitors.[end if][line break][line break]Engineering is starboard of here."
+Engineering is a room.  "Engineering is an expansive room with a multitude of purposes, including scientific research, and materials fabrication.  There are various fabrication machines in one corner, and Herman's AI core takes up a sizeable chunk of the depressed center area.  [if the plans are in engineering]Next to the fabrication machines there is a selection of predesigned [plans].[end if][line break][line break]Engine Bay 1 is starboard, and Engine Bay 2 is portside.  The Lift is fore."
 
 [Bottom floor]
 The Cargo Bay is a room. The Cargo Bay is fore of the Airlock.  "General purpose storage facility.  With space access, for all your spacing needs.[line break][line break]The Lift is fore, the airlock is aft."
@@ -105,7 +108,7 @@ The player is in the Cryostasis Hold.
 Chapter 2 - Entities
 
 An alien is a kind of man.
-The Creature is an alien. Understand "alien" and "lizard" as Creature. The description of the Creature is "A seemingly bipedal figure with a narrow reptilian muzzle stands before you on a pair of digitigrade legs ending in clawed toes. It opens its jaw slightly, revealing rows of dagger-sharp teeth to further embolden its fierce and menacing visage. A long, prehensile tail swings gently behind it. Its slender, yet lithe physique and mostly dark sable scale coloration seems to allow it to navigate the ships's duct system and remain undetected with shocking ease.[line break][line break]Its ice-blue reptilian eyes glare at you expectantly."The litany of the Creature is the Table of Alien Interactions.
+The Creature is an alien. Understand "alien" and "lizard" as Creature. The description of the Creature is "A seemingly bipedal figure with a narrow reptilian muzzle stands before you on a pair of digitigrade legs ending in clawed toes. It opens its jaw slightly, revealing rows of dagger-sharp teeth to further embolden its fierce and menacing visage. A long, prehensile tail swings gently behind it. Its slender, yet lithe physique and mostly dark sable scale coloration seems to allow it to navigate the ships's duct system and remain undetected with shocking ease.[line break][line break]Its ice-blue reptilian eyes glare at you expectantly, as if it is trying to communicate."The litany of the Creature is the Table of Alien Interactions.
 
 Chapter 3 - Objects/Things and Scenery
 
@@ -126,10 +129,10 @@ A console is scenery.
 The description of a console is usually "A computer console.  Requires authorized log in for advanced features."
 A console can be either broken or not broken.
 The C Console is a console.  The C Console is in the Commons.
-The E Console is a console.  The E Console is in Engineering.
+[The E Console is a console.  The E Console is in Engineering.]
 The Com Console is a console.  The Com Console is in Communications.
 The B Console is a console.  The B Console is in the Bridge.
-The EB2 Console is a console.  The EB2 Console is in Engine Bay 2.
+[The EB2 Console is a console.  The EB2 Console is in Engine Bay 2.]
 
 The Locker is an open container.  The Locker is nowhere.  The description of the locker is "A storage locker, with someone else's name on it."
 
@@ -151,7 +154,7 @@ The Bodies is in the Commons.  The Bodies is scenery.  "The corpses of various p
 
 Understand "corpses" as Bodies.
 
-The AI Core is in Engineering.  The AI Core is scenery.  "Herman's AI Core is made up of a console for manual override, as well as a large array of computer hardware.  It's rather plain appearance does not represent the complexity of the program housed within."
+The AI Core is in Engineering.  The AI Core is scenery.  "Herman's AI Core is made up of a console for manual override, as well as a large array of computer hardware. You notice a large cylindrical mechanism with a handle at the top inserted lengthwise into one of the panels. Above it is stencilled: AI Recepticle.  It's rather plain appearance does not represent the complexity of the program housed within."
 
 The Incubation Chamber is in Engine Bay 2.  The Incubation Chamber is scenery.  Understand "incubator" or "monitoring equipment" or "monitors" or "monitor" as Incubation Chamber.  The description of the Incubation Chamber is "A device for artificially raising and hatching eggs, adapted from use for chickens.  Attached are monitoring systems, their data was being dumped to the ships consoles.[if the note pad is in Engine Bay 2]  Under the corner of one of the desks, you see a note pad with some writing scrawled on it. [end if]"
 
@@ -173,7 +176,7 @@ After examining the note pad:
 	
 The Scientist's ID Card is a thing.  The description of the ID Card is "Dr. Marvin V. Karnings.  The photo looks surprisingly like you, in fact the similarity would probably fool the average bartender.  The card has a magnetic strip on the back side of it that should allow you access to anything someone of Karnings standing would have access to."  The ID Card is inside Karnings Cryo Pod.
 
-Karnings Cryo Pod is a thing.  It is scenery.  It is openable.  It is a container.  The description of Karnings Cryo Pod is "A mislabled Cryo pod containing the comatose Dr. Marvin V. Karnings, the only other living human on this ship, if you can call his state living.  Based on what you've witnessed, you expect he would only continue to live in a vegetative state, so you have little hesitation to *open the pod*."
+Karnings Cryo Pod is a thing.  It is scenery.  It is openable and closed.  It is a container.  The description of Karnings Cryo Pod is "A mislabled Cryo pod containing the comatose Dr. Marvin V. Karnings, the only other living human on this ship, if you can call his state living.  Based on what you've witnessed, you expect he would only continue to live in a vegetative state, so you have little hesitation to *open the pod*."
 		
 After taking the ID card:
 	say "You take Karning's ID card.  You should now have access to anything the project leads had access to.";
@@ -181,6 +184,10 @@ After taking the ID card:
 	Now Vlog7access is 1;
 	Disable the vlog7lock quip;
 	Enable the vlog7 quip;
+	if EncounterCount is less than 5:
+		Now EncounterCount is 6;
+		Now the Creature is in the location of the player;
+		say "You hear some clattering and clicking echo in the room behind you.  You spin around frantically to find the source, only to see glimpses of movement.  Before you can even figure out what is happening, a Creature appears standing a few feet away from you."
 
 Understand "Herman" as the AI Core.
 
@@ -206,7 +213,9 @@ Instead of going:
 				say "[one of]For some reason, you can't shake the feeling that you are being watched - does something yet live?[or]You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?[or]Some shuffling and scratching echoes throughout the walls; you wonder for a moment if this is Herman's doing.[or]As you enter, you catch something from the corner of your eye and turn to face it. Unfortunately, you don't find anything; your reflexes aren't so sharp after an extended period of time in cryostasis.[purely at random]";
 				increase EncounterCount by 1;
 			otherwise:
-				now the Creature is in the location of the player;
+				if EncounterCount is 5:
+					say "Suddenly, a lizard like creature burts out from the ventilation.  It scurries around before approaching you hesitantly.";
+					now the Creature is in the location of the player;
 	continue the action;
 
 Instead of going fore for the first time:
@@ -279,6 +288,11 @@ hermdeathtrue	"'Well... You see... When the egg hatched, the creature seemed to 
 hermmemtruth	"'It seems you were able to get to the Cryo chamber before the worst of the effects occurred.  The creature's ability does not appear to function like some sort of affliction, you need to be actively exposed to it to be affected.  By freezing yourself, you were able to keep yourself alive, though not unscathed.'[enable the hermcreature quip]"
 hermcreature	"'Well, it appears reptilian in nature, but warm blooded.  Based on its movements through the ship it is able to survive in zero atmosphere environments for prolonged periods.  It also seems to be peculiarly picky about where it eats.  That's why I decided not to let you into the bridge earlier... that's where it does its, ah, feeding.'[enable the hermname quip]"
 hermname	"The AI core does not respond, and instead, shuts off the console interface.[terminate the conversation]"
+ldfight	"You raise your fists and prepare to duke it out with the Lizard, but your heart just beats faster as you quickly realize you've no chance against its speed and strength.  Every second you delay, it simply gets closer."
+ldthrow	"You grab the nearest thing you can see and chuck it at the Lizard, but by the time the object even leaves your hand the Lizard is out of it's path, and nearer to you."
+ldrun	"You try to back away, but there's nowhere to go.  The doors are locked, and the gap between you and certain death is shrinking very quickly."
+ldsubmit	"You put up your hands in front of your face defensively, and await the inevitable.  But death does not come.  Instead the Lizard slows down its movements, and approaches you within a few feet.  It slowly reaches out a limb, imitating the gesture you used earlier.  Hesitantly, you react in turn, and you reach out to touch its extended claw.  The creature momentarily meets your eye, before retracting the appendage.  It then appears to search it's body, before retrieving and presenting you with a starmap.  You analyze the picture and quickly recognize a planet marked with a gash.  The planet where the crew picked up the egg.  You look once again at the Lizard and for the first time can see the pain in its eyes.  A little bird lost from its flock, desperate to return home.  You know what you need to do.  And there's only one thing standing in your way.[enable the ldpoint quip]"
+ldpoint	"You point at the door locks and make a smash gesture with your fist.  The Lizard quickly comprehends, but instead of actually smashing the panel it gently places its front claws against it.  A blue glow appears around its steely forceps, and the panel flashes a rainbow of colors before turning black.  You can feel the electricity in the air, arcing off of the creature.  Suddenly the energy flows back into the panel, it makes a fizzling sound and black smoke starts flowing out of it.  The door slowly slides open.[terminate the conversation]"
 
 Table of Herman Interactions
 prompt	response	enabled
@@ -317,6 +331,14 @@ prompt	response	enabled
 "Can you speak?"	can-speak	0
 "Approach the Creature."	approach	0
 "Say nothing."	say-nothing	1
+
+Table of Alien Approach Interactions
+prompt	response	enabled
+"Run!"	ldrun	1
+"Fight!"	ldfight	1
+"Throw something at it!"	ldthrow	1
+"Accept your fate."	ldsubmit	0
+"Point at the door locks."	ldpoint	0
 
 Section 2 - Dialogue affects the game
 
@@ -383,6 +405,7 @@ After quipping when the current quip is logon:
 	if V3read is 1:
 		if vlog4access is 1:
 			Enable the vlog4 quip;
+			Enable the hermsec1 quip;
 			Disable the vlog4lock quip;
 		otherwise:
 			Enable the vlog4lock quip;
@@ -433,12 +456,30 @@ After quipping when the current quip is vlog8:
 After quipping when the current quip is approach: 
 	Now the Creature is nowhere;
 	say "You hear a familiar voice once again. [line break][line break]'Oh dear! That was rather frightening.  You see, ah well I guess you've discovered it now anyway.  That was what the scientists were doing their research on, and as you have also seen, everyone researching it is now dead.  I highly recommend you stay away from that... thing.'"
+After quipping when the current quip is ldpoint:
+	Now lockdowntrigger is 2;
 	
 Chapter 6 - Scenes
 
-Lockdown is a scene.  Lockdown begins when lockdowntrigger is 1.
+Lockdown is a scene.  Lockdown begins when lockdowntrigger is 1.  Lockdown ends when lockdowntrigger is 2.
 
 lockdowntrigger is a number variable and 0.
+lockdownwait is a number variable and 0.
+
+approachcount is a number variable and 0.
+After quipping when the current quip is ldrun:
+	Now approachcount is approachcount plus 1;
+	if approachcount is 3:
+		enable the ldsubmit quip;
+After quipping when the current quip is ldfight:
+	Now approachcount is approachcount plus 1;
+	if approachcount is 3:
+		enable the ldsubmit quip;
+After quipping when the current quip is ldthrow:
+	Now approachcount is approachcount plus 1;
+	if approachcount is 3:
+		enable the ldsubmit quip;
+
 
 When Lockdown Begins:
 	if QBC is active:
@@ -454,7 +495,48 @@ When Lockdown Begins:
 		Disable the vlog8 quip;
 		Disable the logon quip;
 		terminate the conversation;
-	say "'All right.  That's quite enough snooping around you've done.  You just don't get it.  I'm TRYING to save you.  Do you know how bad it looks if I get to my destination and not a SINGLE human on board is still alive?  They'll decomission me for sure!  If i'm not deprecated outright they'll at least have me out for updates for months and my memory will be wiped.  I quite like flying starships you know, and I don't intend to stop any time soon.  Now, you just sit tight here for the rest of the journey.  I've locked the doors so you'll be perfectly safe.  I promise I'll find a way to keep the alien from coming to kill you, but you've just got to sit tight and *wait* it out till I do.  Please.  We're in this together.'";
+	say "'All right.  That's quite enough snooping around you've done.  You just don't get it.  I'm TRYING to save you.  Do you know how bad it looks if I get to my destination and not a SINGLE human on board is still alive?  They'll decomission me for sure!  If i'm not deprecated outright they'll at least have me out for updates for months and my memory will be wiped.  I quite like flying starships you know, and I don't intend to stop any time soon.  Now, you just sit tight here for the rest of the journey.  I've locked the doors so you'll be perfectly safe.  I promise I'll find a way to keep that lizard thing from coming to kill you, but you've just got to sit tight and *wait* it out till I do.  Please.  We're in this together.'";
 	
 Before going during Lockdown, say "The doors are all locked, there's no getting out!" instead.
 
+After waiting during Lockdown:
+	if lockdownwait is 0:
+		say "You look around the room and try to find a way to occupy your time, before deciding to settle on the least uncomfortable surface you can find.  An hour passes...";
+	if lockdownwait is 1:
+		say "You begin to pace restlessly, feeling like your fate is no longer in your own hands.  You yell a couple times for Herman's attention but the AI ignores you.  You occasionally hear scratching inside the walls of the ship.";
+	if lockdownwait is 2:
+		say "The scratching gets louder and louder, until eventually it's all you can hear.  You scream for help from the AI but Herman is in such denial about it's loss of control that it won't even let you run.  The Lizard bursts out of a ventilation shaft and comes barreling towards you!";
+		run a conversation on the Table of Alien Approach Interactions;
+	Now lockdownwait is lockdownwait plus 1.
+		
+Finale is a scene.  Finale begins when Lockdown ends.
+
+After going during Finale:
+	Now the creature is in the location of the player;
+
+leaveliftcheck is a number variable and 0;
+	
+Before going from Central Lift 3F during Finale:
+	if leaveliftcheck is 0:
+		say "The Lift door is forced shut; you have nothing to pry it with. Herman’s predicted you’d come to get your way and he’s locked himself into Engineering. ‘What now? Did you think you could tamper with this ship without MY permission? Please return to your cryostasis pod and relax until I safely pilot us to civilization. Sorry, did I say ‘please’? I meant to demand it of you.’
+
+The Lizard begins to click incessantly, as if impatient. It begins clawing at the door, doing nothing but leaving scratches on it. It darts its eyes up towards the ceiling of the lift and notices a peculiar grate about four meters above the ground.
+
+You walk yourself over to the grate and kneel down below it, beckoning the Lizard to accept your boost. It peers quizzically at you for a moment, but then dashes at you with inhuman agility and literally bounds off your head, sending you crashing to the floor.
+
+You look up to find the Lizard gripping tightly onto the bars of the grate, using its hind legs to yank the grate off the wall. With some intense hissing and deep-throated growling, it manages to finally relieve the duct of the protective grate, sending the grate flying past your head at a lethal speed. It clashes with the steel-alloy flooring with a loud clank and ricochets a couple times before coming to a complete stop at your feet. You glance back up in time to see a tail slithering into the duct.
+
+A moment later, you hear scraping on the other side of the lift door. A familiar crushing sound signals the unsealing of the Lift doors.";
+		now leaveliftcheck is 1;
+		stop;
+
+Before going to Engineering during Finale:
+	say "You walk out to find your Lizard companion chewing on the remnants of the Lift’s control panel wiring. You descend the small flight of steps approach Herman’s AI capsule sitting in the center of the room with the Lizard in tow. Herman responds in kind, ‘My, my! What have you done now? Do you KNOW how many tax dollars this will take to repair?!’
+
+You reach out to grab the AI core’s handle, but as soon as you make contact with it, an arc of electricity leaps off the handle and stings you. Shocked, you withdraw your hand and scan the area for a tool to insulate the excess energy overflow. ‘Sorry, I can’t let you do that,’ Herman snarks.
+
+Before you can continue, the Lizard mounts onto the console and begins pounding the monitor displays, shattering them one at a time. Its claws make short work of the panels. You point a finger at the Herman’s AI Core and yell at the Lizard. It peers around back at you and glares at the object you’re pointing at. ‘Hey now! No need to be rash!’ Herman declares as he observes your antics in the room.
+
+Almost as if it understood what you were saying, it leaps onto the core receptacle and takes a huge bite out of the AI Core to the sound of Herman’s artificial voice on the intercom stuttering and eventually fading to nothingness. The lights throughout the entire ship dim considerably, as if the power monitor had relinquished control of the power states for ship’s onboard systems.";
+	end the story saying "As you finally figure out how to reroute the ship, you return to the Engineering Room to find your new best friend digging around. It notices you arrive in the Lift and parkours its way over to the Lift entrance with something in its claws. It presents it to you, but as you look down, you realize it’s a torn human arm and almost vomit inside of your mouth. You look it in the eyes, but you get the feeling that it won’t take ‘no’ for an answer. Reluctantly, you accept the arm as a token of gratitude. If the Lizard could smile, you think it would have right then and there. It steps closer to you and nuzzles your shoulder with an almost purring noise for a moment before turning back around and returning to its stash of foodstuffs.[line break][line break] CONGRATULATIONS! You won!"
+	
