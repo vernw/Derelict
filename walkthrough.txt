@@ -1,0 +1,582 @@
+TUTORIAL: Words written in *asterisks* are specific actions that the player should take.  Because you are in a space ship, cardinal directions don't make sense, and they are replaced with Fore/Aft, and Port/Starboard.
+
+An abhorrent hissing sound reverberates throughout your body. A lingering chill eases into a familiar lukewarmth as the sound of air whistling out of a small hole ushers you to open your eyes. You catch a glimpse of frost clinging onto the military-grade glass panel in front of you slowly melting away. A display projected onto the glass flashes the word "Depressurizing" incessantly until the hissing dissipates.
+
+Two heavy clicks are heard, the panel in front of you begins to remove itself and provide you escape from your confinement. A third clunk freezes the hatch in its tracks, leaving a small gap between the mechanism's seams.  You can see steel floor panels through the gap connecting you to the environment outside. As feeling is returned rightfully to your limbs, you forcefully kick the hatch open, sending the door into the wall opposite you. Surprised at how easy it was to break out of your capsule, you ponder the amount of time that has passed.
+
+As you step out of your hold, you notice the dim illumination of the room. Albeit the room is nigh pitch black, you make out the painted "Cryostasis Block D" on the large steel grey wall ahead.
+
+Derelict
+A dark mystery by Vern & Mark
+Release 1 / Serial number 150609 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+
+Cryostasis Hold
+The Cryostasis Hold is designed for keeping passengers from aging (or getting bored) during long space flights.  Generally, the crew can also go into periods of Cryostasis allowing the AI to handle the day to day management of the ship, however, as this was also a research voyage, there are only enough pods for the passengers.  You look around at the names labling the various pods, but none of them seem familiar, even the one labling the pod you stepped out of.
+
+The Commons is fore of here.
+
+>f
+You walk to the door and place your hand against the scanner, but it flashes red.  Locked.  A voice comes over the intercom.  
+
+"Oh, how wonderful!  You're finally awake!  Sorry for the delay, but I thought I'd offer you a friendly warning before you step through that door.  You see... there's been, well, a sort of accident.  Everyone kind of, well...died.  All of them.  Except you!  You're still alive, so that's a plus, right?  I can't tell you how they died though, sorry to say.  This is a research voyage and that knowledge is above your security clearance at the moment.  Anyway, I was just going to leave you frozen for the rest of the journey, but... there are just SO many bodies.  It's getting rather irritating looking at them.  They're quite the eyesore, all pale and clammy looking.  Blech!  I just need someone with a warm body themself to help clean up the lifeless ones.  I don't have arms after all!  You have a strange look on your face... OH! Right.  The memory thing.  I should introduce myself.  I'm Herman, the ship's AI.  Anyway, since you're not doing anything, could you please dispose of the corpses in the next room?  They're not bloody or anything, they just need to be taken down to the incinerator in the engineering department on floor 3.  There's also a hover cart that should help you *dispose of the bodies* though you might need a few trips."
+
+The door panel in front of you turns green.  The intercom buzzes again.
+
+"Oh! I almost forgot.  There's an enginering powersuit in the locker next to your pod.  It should help you do the heavy lifting."
+
+You return to the pod and notice the locker next to it for the first time.  As you approach, the locking mechanism flashes green and it pops open.  You find an engineer's power suit inside, and you put it on.
+
+>f
+
+Commons
+The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."  A Computer console lies in another corner of the room.  There are various corpses lying around the room, looking peaceful in death.
+
+The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.  To the portside lies the Crew Quarters, and starboard lie the Passenger's Quarters.
+
+>dispose of the bodies
+You pile as many corpses onto the hover cart as you can, take it to the elevator and push the button for the third floor, which is labelled "Engineering."  Once there you take a quick look around before noticing the Incinerator in the corner.  You walk up to it and tilt the hover cart towards it's entrance.  You feel a few butterflies in your stomach, but your unease isn't enough for you to question your actions.  The flames quickly engulf the bodies, as the device reacts to the size of the load.  Almost immediately your nostrils are assaulted by a uniquely disturbing scent.  The bodies are not so that they smell of rot, but rather smell like roasted meat.  You now regret possessing the knowledge that cooked human flesh can seem rather appetizing.  You shake yourself out of your stupor, and return to the Commons to gather up the next batch.
+
+>dispose of the bodies
+You again begin to heft the corpses on to the cart.  The activity is beginning to become familiar to you.  It's not much different than lifting a sack of grain, or potatoes.  You make your way to Engineering again, this time taking care to avoid smelling the fruits of your labor, then go back for your final trip.
+
+>dispose of the bodies
+You load the last of the deceased onto the cart and make your way to the elevator, and complete your final trip.  Upon your return you notice that compared to the state you found it in, the nearly empty room feels rather eerie.
+
+"Ah yes, good, you've finished.  How wonderful!  Now, there are just a few more to be dealt with in the bridge.  I'm afraid the crew met a similar fate to the passengers'.  I've unlocked entry to the first floor of the ship now, go ahead and take the elevator up.  Oh, and if you ever get lost, just say *map* and your power suit will pull it up on your HUD."
+
+>f
+
+Central Lift 2F
+The second floor is host to the sleeping quarters for both crew and passengers. Additionally, the Cryostasis Bay can be found towards the stern.
+
+The Commons is aft of here.  You can take the elevator up to the first floor, or down to the third.
+
+>up
+
+Central Lift 1F
+You've arrived topside. The first floor houses all the main command facilities necessary to run the ship. 
+
+The Captain's Quarters is fore of here and the Dining Hall is starboard.  You can take the elevator down to the second floor.
+
+>f
+(first opening the CQ Door)
+
+Captain's Quarters
+The Captain's Quarters is a room of luxury.  Even though the Captain doesn't actually get to spend much time here, it is Federation standard that their quarters are a place they can retreat to for relaxation and decompression.  But not explosive decompression.  That would be bad.
+
+Communications is starboard of here, and the Lift shaft is aft.
+
+>sb
+As you enter, you catch something from the corner of your eye and turn to face it. Unfortunately, you don't find anything; your reflexes aren't so sharp after an extended period of time in cryostasis.
+
+Communications
+The Communications room is fairly self explanatory, but if you really need a detailed description... there are devices here for communicating.  Most of the technology is nothing complicated, RADAR, X-RAY, infrared sensors, as well as an array of ultra long range radios.  Multiple consoles form an array around the border of the room.
+
+The Dining Hall is aft of here, the Bridge is fore, and the Captain's Quarters is port.
+
+>f
+A voice cracks in over the intercom.
+
+"Ahem. Yes. Actually.  Now that you're here, well.  I've changed my mind.  I think you've exposed yourself to quite enough bodies for one day! Ha ha! (oh my that sounded rather forced...) I would put you back into Cryosleep, but, well, you broke the last working pod when you kicked the door off it's hinges.  So I suppose you can just wander around and watch TV or something in the Commons.  We're only going to be flying for a about another week, hopefully you can entertain yourself till we arrive.  There are a few fabrication tools and plans lying around in Engineering if you're feeling more, heh, constructive.  I'll check in on you from time to time.  It gets pretty boring out here for an AI as well.  Only so many times you can read through the "Galactic History of Everything" before it just seems trite."
+
+>p
+
+Captain's Quarters
+The Captain's Quarters is a room of luxury.  Even though the Captain doesn't actually get to spend much time here, it is Federation standard that their quarters are a place they can retreat to for relaxation and decompression.  But not explosive decompression.  That would be bad.
+
+Communications is starboard of here, and the Lift shaft is aft.
+
+>a
+
+Central Lift 1F
+You've arrived topside. The first floor houses all the main command facilities necessary to run the ship. 
+
+The Captain's Quarters is fore of here and the Dining Hall is starboard.  You can take the elevator down to the second floor.
+
+>down
+
+Central Lift 2F
+The second floor is host to the sleeping quarters for both crew and passengers. Additionally, the Cryostasis Bay can be found towards the stern.
+
+The Commons is aft of here.  You can take the elevator up to the first floor, or down to the third.
+
+>a
+
+Commons
+The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."  A Computer console lies in another corner of the room.
+
+The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.  To the portside lies the Crew Quarters, and starboard lie the Passenger's Quarters.
+
+>use console
+[1] Log On
+[2] Exit
+
+>1
+You log into the computer.  The desktop shows icons for a number research applications, as well as a file explorer.
+
+[1] Exit
+[2] Research Apps
+[3] File Explorer
+
+>2
+You see charts that appear to be tracking the progress of a living organism.  It appears to cut off on December 12th, where all signs of life abruptly flatline.
+
+[1] Exit
+[2] File Explorer
+[3] Check the date
+
+>2
+You see a number of audio, video, and text logs, sorted by date.
+
+[1] Exit
+[2] Check the date
+[3] View Nov 11th, 2491 - 1834 hours
+
+>2
+You check the date in the corner of the desktop.  December 17th.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+
+>2
+Video Log:
+
+A man in a decorated uniform sits comfortably in his reclining chair. Behind him, you can make out a silver placard hanging above the doorway to what appears to be the bridge. After fussing with his hair for a moment, he begins speaking:
+
+"Today marks the arrival of humanity to Beta Venator 88 IV on the wings of our Valafar. Spirits are high. After all, every last habitable planet is a valuable asset to ISCA (Inter-Stellar Colonization Affirmative). The temporary base has been secured with haste at Point Blanc and basic living conditions have been established. Unfortunately, I don't see myself finding too much free time in the weeks to come - I'll try to update regularly."
+
+He sighs heavily and fixes his collar before nodding into the camera and saying,
+
+"The celebrations are underway, and my presence is requested. Second Lieutenant Stritzheis, signing off."
+
+The video cuts off there.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+
+>3
+You can make out the same silhouette from the first log sitting in the same location. The lighting is a lot dimmer now for some odd reason.
+
+"Dr. Wreiss, two of your staff stopped me earlier and mentioned that you brought something aboard. Livenne calls it an alien relic. If what she says is true, then maybe we can bring home a nice Christmas gift. Do report back ASAP. I look forward to your findings.
+
+Also, don't forget to set up the DSN receptors to regulate altitude for the ship as is leaves atmosphere tonight. We can't have what happened last time again.
+
+Stritzheis, signing off."
+
+The video cuts off there.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+
+>4
+The video footage seems to have been corrupted, but you can make out enough of the audio to understand what is being said. A female voice speaks up after several seconds of mumbling in the background:
+
+"Lt. Stritzheis, we've put the relic under close examination. To our surprise…the relic appears to have a...pulse. I know it sounds absurd, but I'm led to believe this relic is an actual living organism, or at the very least..."
+
+Her voice hushes and nears the microphone,
+
+"...an egg. I know the protocols involving extraterrestrial species, but you have to see it for yourself. I'm leaving the Bay 2 key in your locker in the Crew Quarters. Please come down and see it for yourself at your earliest convenience."
+
+The video cuts off there.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+
+>5
+You are not authorized to access this log.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+
+>1
+You log out and step away from the computer.
+
+>p
+
+Crew Quarters
+The Crew Quarters are a bit more spruced up than the passengers.  Seeing as this was a research voyage, there's not enough Cryo space for the crew, and they are expected to live here.  The room is sectioned off via 3/4 height walls into doubles about twice the size of an office cubicle.  Bunks are more comfortable than the passenger's but still nothing approaching luxury.
+
+The Commons is starboard of here.
+
+You can see a Locker (in which is an EB2 Key) here.
+
+>take key
+You found a digital key to Engine Bay 2.
+
+>x key
+A data pad with access credentials to Engine Bay 2.
+
+>sb
+
+Commons
+The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."  A Computer console lies in another corner of the room.
+
+The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.  To the portside lies the Crew Quarters, and starboard lie the Passenger's Quarters.
+
+>f
+
+Central Lift 2F
+The second floor is host to the sleeping quarters for both crew and passengers. Additionally, the Cryostasis Bay can be found towards the stern.
+
+The Commons is aft of here.  You can take the elevator up to the first floor, or down to the third.
+
+>d
+You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?
+
+Central Lift 3F
+The third floor, otherwise called the Engineering floor, is home to the systems that run and fly the ship. Inclusive of the engine bays, Herman's AI core is secured on this floor as well.
+
+Engineering is aft of here.  You can take the elevator up to the second floor, or down to the fourth.
+
+>a
+
+Engineering
+Engineering is an expansive room with a multitude of purposes, including scientific research, and materials fabrication.  There are various fabrication machines in one corner, and Herman's AI core takes up a sizeable chunk of the depressed center area.  Next to the fabrication machines there is a selection of predesigned plans.
+
+Engine Bay 1 is starboard, and Engine Bay 2 is portside.  The Lift is fore.
+
+>p
+(first opening EB2 Door)
+
+Engine Bay 2
+This bay contains one of two primary engines for the ship.  The ship is designed in such a manner that even in the event of a complete failure of one engine, the ship is still operational on some level in any normal situation it would be expected to be in.  There is a space for an anti-matter fuel capsule to be manually inserted.
+
+In one corner, a space has been created to harber an incubation chamber, with some of the engine's power being redirected to the device.  Attached are various pieces of monitoring equipment.  Inside are the remains of an egg the size of a beach ball.
+
+Engineering is starboard of here.
+
+>x egg
+Leathery, thick, and green colored, this shell housed a fetal version of  whatever creature was discovered in the video log.
+
+>x incubator
+A device for artificially raising and hatching eggs, adapted from use for chickens.  Attached are monitoring systems, their data was being dumped to the ships consoles.  Under the corner of one of the desks, you see a note pad with some writing scrawled on it. 
+
+>take note pad
+Taken.
+
+>read note pad
+The writing on the note pad reads "Login: mvkarn PW: X3n0mOrP#"
+
+You can use these credentials to access more records on the computer, and force Herman to answer more of your questions.
+
+>sb
+You hear some nigh muted prattering in the nearby air ducts. Are you not alone on this ship?
+
+Engineering
+Engineering is an expansive room with a multitude of purposes, including scientific research, and materials fabrication.  There are various fabrication machines in one corner, and Herman's AI core takes up a sizeable chunk of the depressed center area.  Next to the fabrication machines there is a selection of predesigned plans.
+
+Engine Bay 1 is starboard, and Engine Bay 2 is portside.  The Lift is fore.
+
+>f
+
+Central Lift 3F
+The third floor, otherwise called the Engineering floor, is home to the systems that run and fly the ship. Inclusive of the engine bays, Herman's AI core is secured on this floor as well.
+
+Engineering is aft of here.  You can take the elevator up to the second floor, or down to the fourth.
+
+>up
+
+Central Lift 2F
+The second floor is host to the sleeping quarters for both crew and passengers. Additionally, the Cryostasis Bay can be found towards the stern.
+
+The Commons is aft of here.  You can take the elevator up to the first floor, or down to the third.
+
+>a
+
+Commons
+The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."  A Computer console lies in another corner of the room.
+
+The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.  To the portside lies the Crew Quarters, and starboard lie the Passenger's Quarters.
+
+>use console
+[1] Log On
+[2] Exit
+
+>1
+You log into the computer.  The desktop shows icons for a number research applications, as well as a file explorer.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+
+>5
+There has been sufficient data collected about to relic to assume it contains an embryo. Log will refer to the relic as an egg. Since this frigate lacks a science facility, we have devised a makeshift incubator for the egg.
+
+Day 2 Incubation Report:
+
+Egg appears to respond positively to room temperatures of 24°C to 26°C with a favored incubation temperature of up to 31°C. Any higher may drastically harm the embryo. Bay 2 has been selected to host the nurturing and development of the egg for the tools and ability to sport these temperatures consistently. These numbers seem to indicate a warm blooded species.
+
+Absolute humidity of this ship is insufficient - relative humidity regulated to match native environments of up to 45 grams per cubic meter with air saturated at 30°C. Ideal moisture level appears about 50% to 55% relative humidity on a wet bulb thermometer. Fortunately, the raw exhaust from the six repulsorlift fission reactors produce enough heat to also maintain this humidity level for long enough spans of time to allow for sporadic caretaking sessions. Albeit the temperature we can provide is slightly higher than expected. 
+
+Egg has begun to dry out, but this seems natural, considering that the pulse of the egg still remains healthy. Dr. Karnings has been tasked with monitoring the egg and venting the incubator at predetermined times.
+
+This concludes the report.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+
+>6
+Medic Bay Report 656767210d0a0d0a:
+
+It appears that Dr. Karnings has fallen ill as of last night and is temporarily relieved from his duty. I have personally assigned Pvt. Dache to fill his role while Dr. Karnings recuperates. The symptoms we have examined include headache, nausea, temporary blindness, and explosive diarrhea. A couple passengers have taken note and are beginning to question what we are harboring.
+
+This draws suspicion to the relic. The relic does not seem to be producing chemicals as far as we've detected, and our other sensors are reading nulls across the board. Further investigation will be promptly conducted. If findings yield any chance that this relic is harmful to our well being, I will submit an order to evacuate it from an airlock.
+
+  -  Dr. Humlock 
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+[7] View Dec 10th, 2491 - 1255 hours
+
+>7
+Medic Bay Report 6372796f0d0a0d0a:
+
+I regret to be the bearer of bad news, but Dr. Karnings has fallen into a coma. The majority fearing that the illness is contagious, we have opted to instate him into a cryostasis pod post-haste. Still, research is paramount and the main focus of this vessel. I will submit a request to tighten security regarding handling of the relic to calm the nerves of my colleagues.
+
+Some are highly concerned that his illness is starting to spread, but I assert that it's simply in their heads. Surely nothing can be this infectious if it is not a detectable airborne pathogen.
+
+  -  Dr. Humlock
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+[7] View Dec 10th, 2491 - 1255 hours
+[8] View Dec 11th, 2491 - 2308 hours
+
+>8
+You require top secret security clearance to access this log
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+[7] View Dec 10th, 2491 - 1255 hours
+[8] View Dec 11th, 2491 - 2308 hours
+
+>1
+You log out and step away from the computer.
+
+>a
+Some shuffling and scratching echoes throughout the walls; you wonder for a moment if this is Herman's doing.
+
+Cryostasis Hold
+The Cryostasis Hold is designed for keeping passengers from aging (or getting bored) during long space flights.  Generally, the crew can also go into periods of Cryostasis allowing the AI to handle the day to day management of the ship, however, as this was also a research voyage, there are only enough pods for the passengers.  You look around at the names labling the various pods, but none of them seem familiar, even the one labling the pod you stepped out of.
+
+The Commons is fore of here.
+
+>x pod
+A mislabled Cryo pod containing the comatose Dr. Marvin V. Karnings, the only other living human on this ship, if you can call his state living.  Based on what you've witnessed, you expect he would only continue to live in a vegetative state, so you have little hesitation to *open the pod*.
+
+>open the pod
+You open Karnings Cryo Pod, revealing a Scientist's ID Card.
+
+>take id card
+You take Karning's ID card.  You should now have access to anything the project leads had access to.
+You hear some clattering and clicking echo in the room behind you.  You spin around frantically to find the source, only to see glimpses of movement.  Before you can even figure out what is happening, a Creature appears standing a few feet away from you.
+
+>talk to creature
+[1] What are you?
+[2] Say nothing.
+
+>1
+You try to talk with the creature.  It doesn't immediately appear to understand you, but instead cocks its head in a bizarrely human-like fashion.
+
+[1] Can you speak?
+[2] Approach the Creature.
+[3] Say nothing.
+
+>3
+You stare in silence at the creature.  It stares back momentarily, then breaks your gaze skitters around nervously.
+
+[1] Can you speak?
+[2] Approach the Creature.
+
+>1
+You ask the creature if it can speak.  It responds with a series of clicks and hisses.
+
+[1] Approach the Creature.
+
+>1
+You slowly walk towards the creature, reaching a hand out.  It hesitantly approaches you, then turns around and dashes towards the air duct.  It's movements are so quick, they barely register before your eyes.
+
+You hear a familiar voice once again. 
+
+"Oh dear! That was rather frightening.  You see, ah well I guess you've discovered it now anyway.  That was what the scientists were doing their research on, and as you have also seen, everyone researching it is now dead.  I highly recommend you stay away from that... thing."
+
+>f
+
+Commons
+The Common area has a few couches, pool and foosball tables, as well as a projector.  The projector is attached to a holodisk player with a small selection of physical disks as well as a hard drive containing a much wider selection of programming, though most of that has been censored by the military.  The passengers and crew tend to enjoy their personal copies of "It Came From Planet 10 in the Outer Rim" more than the digital "__ Came From _____ in the ______."  A Computer console lies in another corner of the room.
+
+The Cryostasis Hold is aft of here.  To the fore stands the double door access to the Lift.  To the portside lies the Crew Quarters, and starboard lie the Passenger's Quarters.
+
+>use console
+[1] Log On
+[2] Exit
+
+>1
+You log into the computer.  The desktop shows icons for a number research applications, as well as a file explorer.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+[7] View Dec 10th, 2491 - 1255 hours
+[8] View Dec 11th, 2491 - 2308 hours
+
+>8
+The screen is blurry, but you can make out a long haired silhouette in the low lighting. Another individual, a male, approaches her hurriedly and inquires in a rushed, but quiet tone:
+
+"What are you doing? We need to go NOW! I'm not waiting around for that to happen to me."
+
+The man grabs the woman by the wrist and tugs on her to leave with him. She pushes his hand away and asks for a moment. 
+
+"The ship is on autopilot. Herman will take us to the nearest human colony. It says…"
+
+She looks down at what appears to be another monitor and reads slowly.
+
+"Dur...ahem, Epsilon Durandal 107 II a. The date is December twelve, four-ninety-first of the second millenia. Doctor Rubie Wreiss, s-signing off."
+
+At that moment, the man ushers her to go and reaches down to end the recording. The video cuts off there.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+[7] View Dec 10th, 2491 - 1255 hours
+[8] View Dec 11th, 2491 - 2308 hours
+[9] View Dec 12th, 2491 - 0148 hours
+
+>9
+The first seventeen seconds of the video are pure static. Surprisingly enough, the video recording is still running. You begin to hear tampering with the machinery. Banging, if you could verbalize it. Finally, a voice, along with shredded video segments, is delivered:
+
+"Damn, is this wor--"
+
+Static noise fills in the next ten seconds before the audio returns.
+
+"--ey, HEY! Shit's going haywire, man. Is this thing on? Whatever we picked up is causing this. Th-that piece of...whatever. It's going down, man! Is this a radio? Hello?! Screw all this, I--"
+
+The video cuts off there.
+
+[1] Exit
+[2] View Nov 11th, 2491 - 1834 hours
+[3] View Dec 2nd, 2491 -  1416 hours
+[4] View Dec 3rd, 2491 - 0012 hours
+[5] View Dec 6th, 2491 - 0658 hours
+[6] View Dec 8th, 2491 - 0729 hours
+[7] View Dec 10th, 2491 - 1255 hours
+[8] View Dec 11th, 2491 - 2308 hours
+[9] View Dec 12th, 2491 - 0148 hours
+
+"All right.  That's quite enough snooping around you've done.  You just don't get it.  I'm TRYING to save you.  Do you know how bad it looks if I get to my destination and not a SINGLE human on board is still alive?  They'll decomission me for sure!  If i'm not deprecated outright they'll at least have me out for updates for months and my memory will be wiped.  I quite like flying starships you know, and I don't intend to stop any time soon.  Now, you just sit tight here for the rest of the journey.  I've locked the doors so you'll be perfectly safe.  I promise I'll find a way to keep that lizard thing from coming to kill you, but you've just got to sit tight and *wait* it out till I do.  Please.  We're in this together."
+
+>f
+The doors are all locked, there's no getting out!
+
+>wait
+You look around the room and try to find a way to occupy your time, before deciding to settle on the least uncomfortable surface you can find.  An hour passes...
+
+>wait
+You begin to pace restlessly, feeling like your fate is no longer in your own hands.  You yell a couple times for Herman's attention but the AI ignores you.  You occasionally hear scratching inside the walls of the ship.
+
+>wait
+The scratching gets louder and louder, until eventually it's all you can hear.  You scream for help from the AI but Herman is in such denial about it's loss of control that it won't even let you run.  The Lizard bursts out of a ventilation shaft and comes barreling towards you!
+[1] Run!
+[2] Fight!
+[3] Throw something at it!
+
+>1
+You try to back away, but there's nowhere to go.  The doors are locked, and the gap between you and certain death is shrinking very quickly.
+
+[1] Fight!
+[2] Throw something at it!
+
+>1
+You raise your fists and prepare to duke it out with the Lizard, but your heart just beats faster as you quickly realize you've no chance against its speed and strength.  Every second you delay, it simply gets closer.
+
+[1] Throw something at it!
+
+>1
+You grab the nearest thing you can see and chuck it at the Lizard, but by the time the object even leaves your hand the Lizard is out of it's path, and nearer to you.
+
+[1] Accept your fate.
+
+>1
+You put up your hands in front of your face defensively, and await the inevitable.  But death does not come.  Instead the Lizard slows down its movements, and approaches you within a few feet.  It slowly reaches out a limb, imitating the gesture you used earlier.  Hesitantly, you react in turn, and you reach out to touch its extended claw.  The creature momentarily meets your eye, before retracting the appendage.  It then appears to search it's body, before retrieving and presenting you with a starmap.  You analyze the picture and quickly recognize a planet marked with a gash.  The planet where the crew picked up the egg.  You look once again at the Lizard and for the first time can see the pain in its eyes.  A little bird lost from its flock, desperate to return home.  You know what you need to do.  And there's only one thing standing in your way.
+
+[1] Point at the door locks.
+
+>1
+You point at the door locks and make a smash gesture with your fist.  The Lizard quickly comprehends, but instead of actually smashing the panel it gently places its front claws against it.  A blue glow appears around its steely forceps, and the panel flashes a rainbow of colors before turning black.  You can feel the electricity in the air, arcing off of the creature.  Suddenly the energy flows back into the panel, it makes a fizzling sound and black smoke starts flowing out of it.  The door slowly slides open.
+
+>f
+>look
+Central Lift 2F
+The second floor is host to the sleeping quarters for both crew and passengers. Additionally, the Cryostasis Bay can be found towards the stern.
+
+The Commons is aft of here.  You can take the elevator up to the first floor, or down to the third.
+
+You can see a Creature here.
+
+>d
+>look
+Central Lift 3F
+The third floor, otherwise called the Engineering floor, is home to the systems that run and fly the ship. Inclusive of the engine bays, Herman's AI core is secured on this floor as well.
+
+Engineering is aft of here.  You can take the elevator up to the second floor, or down to the fourth.
+
+You can see a Creature here.
+
+>a
+The Lift door is forced shut; you have nothing to pry it with. Herman's predicted you'd come to get your way and he's locked himself into Engineering. "What now? Did you think you could tamper with this ship without MY permission? Please return to your cryostasis pod and relax until I safely pilot us to civilization. Sorry, did I say "please"? I meant to demand it of you."
+
+The Lizard begins to click incessantly, as if impatient. It begins clawing at the door, doing nothing but leaving scratches on it. It darts its eyes up towards the ceiling of the lift and notices a peculiar grate about four meters above the ground.
+
+You walk yourself over to the grate and kneel down below it, beckoning the Lizard to accept your boost. It peers quizzically at you for a moment, but then dashes at you with inhuman agility and literally bounds off your head, sending you crashing to the floor.
+
+You look up to find the Lizard gripping tightly onto the bars of the grate, using its hind legs to yank the grate off the wall. With some intense hissing and deep-throated growling, it manages to finally relieve the duct of the protective grate, sending the grate flying past your head at a lethal speed. It clashes with the steel-alloy flooring with a loud clank and ricochets a couple times before coming to a complete stop at your feet. You glance back up in time to see a tail slithering into the duct.
+
+A moment later, you hear scraping on the other side of the lift door. A familiar crushing sound signals the unsealing of the Lift doors.
+
+>a
+You walk out to find your Lizard companion chewing on the remnants of the Lift's control panel wiring. You descend the small flight of steps approach Herman's AI capsule sitting in the center of the room with the Lizard in tow. Herman responds in kind, "My, my! What have you done now? Do you KNOW how many tax dollars this will take to repair?!"
+
+You reach out to grab the AI core's handle, but as soon as you make contact with it, an arc of electricity leaps off the handle and stings you. Shocked, you withdraw your hand and scan the area for a tool to insulate the excess energy overflow. "Sorry, I can't let you do that," Herman snarks.
+
+Before you can continue, the Lizard mounts onto the console and begins pounding the monitor displays, shattering them one at a time. Its claws make short work of the panels. You point a finger at the Herman's AI Core and yell at the Lizard. It peers around back at you and glares at the object you're pointing at. "Hey now! No need to be rash!" Herman declares as he observes your antics in the room.
+
+Almost as if it understood what you were saying, it leaps onto the core receptacle and takes a huge bite out of the AI Core to the sound of Herman's artificial voice on the intercom stuttering and eventually fading to nothingness. The lights throughout the entire ship dim considerably, as if the power monitor had relinquished control of the power states for ship's onboard systems.
+
+
+
+    *** As you finally figure out how to reroute the ship, you return to the Engineering Room to find your new best friend digging around. It notices you arrive in the Lift and parkours its way over to the Lift entrance with something in its claws. It presents it to you, but as you look down, you realize it's a torn human arm and almost vomit inside of your mouth. You look it in the eyes, but you get the feeling that it won't take "no" for an answer. Reluctantly, you accept the arm as a token of gratitude. If the Lizard could smile, you think it would have right then and there. It steps closer to you and nuzzles your shoulder with an almost purring noise for a moment before turning back around and returning to its stash of foodstuffs.
+
+ CONGRATULATIONS! You won! ***
