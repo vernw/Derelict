@@ -45,7 +45,7 @@ Understand "map" as Display Map.
 Carry out Display Map:
 	display the Figure Map.
 
-Figure Map is the file "Map.png".
+Figure Map is the file "Map.jpg".
 
 UseConsole is an action applying to nothing.
 Understand "use console" or "use computer" or "use computer console" as UseConsole.

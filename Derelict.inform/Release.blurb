@@ -17,13 +17,13 @@ cover "C:\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Inform 7\Internal\Miscellany\Cover.jpg"
 release file "C:\Inform 7\Internal\Miscellany\Cover.jpg"
 release file "C:\Inform 7\Internal\Miscellany\Small Cover.jpg"
-picture 3 "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.materials\Figures\Map.png"
+picture 3 "C:\Users\Vern\Documents\GitHub\Derelict\Derelict.materials\Figures\Map.jpg"
 
 ! Placeholder variables
 
 placeholder [IFID] = "50525F53-ABAC-4A3C-9933-E1ED7EE8470B"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2015"
+placeholder [YEAR] = "2017"
 placeholder [TITLE] = "Derelict"
 placeholder [AUTHOR] = "Vern &amp; Mark"
 placeholder [BLURB] = "A work of interactive fiction."

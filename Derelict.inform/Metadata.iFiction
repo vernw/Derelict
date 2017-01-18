@@ -10,14 +10,14 @@
             <author>Vern &amp; Mark</author>
             <headline>A dark mystery</headline>
             <genre>Fiction</genre>
-            <firstpublished>2015</firstpublished>
+            <firstpublished>2017</firstpublished>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2015-06-09</releasedate>
+                    <releasedate>2017-01-17</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6L38</compilerversion>
@@ -27,10 +27,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6L38</generatorversion>
-            <originated>2015-06-09</originated>
+            <originated>2017-01-17</originated>
         </colophon>
         <glulx>
-            <serial>150609</serial>
+            <serial>170117</serial>
             <release>1</release>
             <compiler>Inform 7 build 6L38</compiler>
         </glulx>
